@@ -9,12 +9,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>登録フォーム</title>
+    <title>Bootstrapで作る登録フォーム</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/signUp.css">
+    <link rel="stylesheet" href="css/signUp.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="./js/signup.js"></script>
+    <script src="js/signup.js"></script>
     <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
   </head>
   <body>
@@ -38,7 +38,8 @@
               パスワード
               <span class="label label-danger">必須</span>
             </label>
-            <input type="password" id="password" class="form-control" placeholder="パスワードを入力してください"/>
+            <p class="help-block">8文字以上でご記入ください</p>
+            <input type="password" id="password" class="form-control" placeholder="パスワードを入力してください"/ pattern="^[0-9A-Za-z]+$" minlength="8">
           </div>
 
            <div class="form-group">
@@ -46,7 +47,16 @@
               お名前
               <span class="label label-danger">必須</span>
             </label>
-            <input type="text" id="username" class="form-control"placeholder="名前を入力してください"  />
+            <p class="help-block">漢字でご記入ください。</p>
+            <input type="text" id="username" class="form-control"placeholder="名前を入力してください"  pattern="[\u4E00-\u9FFF]*"/>
+          </div>
+
+           <div class="form-group">
+            <label for="username">
+              ふりがな
+              <span class="label label-danger">必須</span>
+            </label>
+            <input type="text" id="username" class="form-control"placeholder="なまえを入力してください" pattern="[\u3041-\u3096]*" />
           </div>
 
            <div class="form-group">
@@ -55,7 +65,7 @@
               <span class="label label-danger">必須</span>
             </label>
 
-            <input id="zip01" name="zip01" maxlength="7" class="form-control" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" placeholder="ハイフン除く数字7桁">
+            <input id="zip01" name="zip01" maxlength="8" class="form-control" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" placeholder="ハイフン除く数字7桁" pattern="\d{3}-?\d{4}">
           </div>
 
            <div class="form-group">
@@ -64,17 +74,13 @@
               <span class="label label-danger">必須</span>
             </label>
              <p class="help-block">住所は2つに分けてご記入ください。</p>
-            <input type="text" id="addr11" name="addr11" class="form-control" placeholder="市区町村名">
+            <input type="text" id="addr11" name="addr11" class="form-control" placeholder="都道府県・市区町村名" pattern="[\u4E00-\u9FFF\u3040-\u309Fー0-9０-９\-－]*">
           </div>
 
 
            <div class="form-group">
-            <label for="a">
-              市区町村
-              <span class="label label-danger">必須</span>
-            </label>
              <p class="help-block">マンション名は必ず記入してください。</p>
-             <input type="text" id="a" name="a" class="form-control" placeholder="番地・ビル名">
+             <input type="text" id="a" name="a" class="form-control" placeholder="番地・ビル名" pattern="[\u4E00-\u9FFF\u3040-\u309Fー0-9０-９\-－]*">
           </div>
 
            <div class="form-group">
@@ -82,15 +88,15 @@
               電話番号
               <span class="label label-danger">必須</span>
             </label>
-            <input type="tel" id="username" class="form-control"placeholder="名前を入力してください"  />
+            <input type="tel" id="username" class="form-control"placeholder="000-0000-0000もしくは00000000000" pattern="^\d{3}-\d{4}-\d{4}$|^\d{11}$"/>
           </div>
 
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" id="agreement" value="true" />
-              同意する
-            </label>
-          </div>
+<!--           <div class="checkbox"> -->
+<!--             <label> -->
+<!--               <input type="checkbox" id="agreement" value="true" /> -->
+<!--               同意する -->
+<!--             </label> -->
+<!--           </div> -->
           <button type="submit" class="btn btn-primary" id="submit">
             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
             登録する
