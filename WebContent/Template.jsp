@@ -19,6 +19,6 @@
 <title>Template</title>
 </head>
 <body>
-あああああああふぇｗふぁｗ
+
 </body>
 </html>
