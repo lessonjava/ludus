@@ -35,7 +35,7 @@
 
           <div class="form-group">
             <label for="password has-feedback">
-              パスワード
+              パスワード(半角英数字)
               <span class="label label-danger">必須</span>
             </label>
             <p class="help-block">8文字以上でご記入ください</p>
@@ -61,7 +61,7 @@
 
            <div class="form-group">
             <label for="zip01">
-              郵便番号
+              郵便番号(半角数字)
               <span class="label label-danger">必須</span>
             </label>
 
@@ -85,10 +85,10 @@
 
            <div class="form-group">
             <label for="username">
-              電話番号
+              電話番号(半角数字)
               <span class="label label-danger">必須</span>
             </label>
-            <input type="tel" id="username" class="form-control"placeholder="000-0000-0000もしくは00000000000" pattern="^\d{3}-\d{4}-\d{4}$|^\d{11}$"/>
+            <input type="tel" id="username" class="form-control"placeholder="000-0000-0000もしくは00000000000" pattern="^\d{3}-\d{4}-\d{4}$|^\d{11}$" maxlength="14" />
           </div>
 
 <!--           <div class="checkbox"> -->
