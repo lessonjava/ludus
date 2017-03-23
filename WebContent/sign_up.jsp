@@ -52,7 +52,7 @@
            <div class="form-group">
             <label for="zip01">
               郵便番号
-              <!--<span class="label label-danger">必須</span>-->
+              <span class="label label-danger">必須</span>
             </label>
 
             <input id="zip01" name="zip01" maxlength="7" class="form-control" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" placeholder="ハイフン除く数字7桁">
@@ -61,7 +61,7 @@
            <div class="form-group">
             <label for="addr11">
               住所
-              <!--<span class="label label-danger">必須</span>-->
+              <span class="label label-danger">必須</span>
             </label>
              <p class="help-block">住所は2つに分けてご記入ください。</p>
             <input type="text" id="addr11" name="addr11" class="form-control" placeholder="市区町村名">
@@ -71,7 +71,7 @@
            <div class="form-group">
             <label for="a">
               市区町村
-              <!--<span class="label label-danger">必須</span>-->
+              <span class="label label-danger">必須</span>
             </label>
              <p class="help-block">マンション名は必ず記入してください。</p>
              <input type="text" id="a" name="a" class="form-control" placeholder="番地・ビル名">
