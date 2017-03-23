@@ -2,7 +2,7 @@ use test;
 insert into users(
 	password,
 	name_kanji,
-	name_kana,
+	name_hira,
 	postal,
 	address1,
 	address2,

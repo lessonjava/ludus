@@ -6,7 +6,7 @@ create table users (
 user_id int primary key not null auto_increment comment 'ユーザーID',
 password varchar(255)  comment 'パスワード',
 name_kanji varchar(50) not null comment '名前(漢字)',
-name_kana varchar(50) not null comment '名前(ふりがな)',
+name_hira varchar(50) not null comment '名前(ふりがな)',
 postal varchar(255) comment '郵便番号',
 address1 varchar(255) comment '住所1',
 address2 varchar(255) comment '住所2',
