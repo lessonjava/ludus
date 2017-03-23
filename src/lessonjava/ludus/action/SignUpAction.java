@@ -1,10 +1,10 @@
-package lessonjava.action;
+package lessonjava.ludus.action;
 
 import java.net.UnknownHostException;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-import lessonjava.dao.SignUpDAO;
+import lessonjava.ludus.dao.SignUpDAO;
 
 public class SignUpAction extends ActionSupport{
 

@@ -5,4 +5,4 @@
  * @author siiji
  *
  */
-package lessonjava.dao;
+package lessonjava.ludus.dao;

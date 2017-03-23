@@ -5,4 +5,4 @@
  * @author siiji
  *
  */
-package lessonjava.action;
+package lessonjava.ludus.action;

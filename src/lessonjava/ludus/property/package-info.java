@@ -5,4 +5,4 @@
  * @author siiji
  *
  */
-package lessonjava.property;
+package lessonjava.ludus.property;

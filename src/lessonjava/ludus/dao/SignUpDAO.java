@@ -1,10 +1,10 @@
-package lessonjava.dao;
+package lessonjava.ludus.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import lessonjava.util.DBConnector;
+import lessonjava.ludus.util.DBConnector;
 
 
 public class SignUpDAO {

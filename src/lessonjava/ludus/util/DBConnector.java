@@ -1,4 +1,4 @@
-package lessonjava.util;
+package lessonjava.ludus.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

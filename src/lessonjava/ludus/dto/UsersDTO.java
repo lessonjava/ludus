@@ -1,7 +1,7 @@
 /**
  *
  */
-package lessonjava.dto;
+package lessonjava.ludus.dto;
 
 /**
  * @author siiji
