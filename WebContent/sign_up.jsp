@@ -39,7 +39,7 @@
               <span class="label label-danger">必須</span>
             </label>
             <p class="help-block">8文字以上でご記入ください</p>
-            <input type="password" id="password" name="password"  class="form-control" placeholder="パスワードを入力してください"/ pattern="^[0-9A-Za-z]+$" minlength="8">
+            <input type="password" id="password" name="password"  class="form-control" minlength="8" placeholder="パスワードを入力してください"  pattern="^[0-9A-Za-z]+$" >
           </div>
 
            <div class="form-group">
@@ -48,7 +48,7 @@
               <span class="label label-danger">必須</span>
             </label>
             <p class="help-block">漢字でご記入ください。</p>
-            <input type="text" id="username" name="nameKanji"  class="form-control" placeholder="名前を入力してください"  />
+            <input type="text" id="username" name="nameKanji"  class="form-control" placeholder="名前を入力してください"  pattern="[々〇〻\x{3400}-\x{9FFF}\x{F900}-\x{FAFF}\x{20000}-\x{2FFFF}]"/>
           </div>
 
            <div class="form-group">

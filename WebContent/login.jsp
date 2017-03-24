@@ -29,14 +29,14 @@
 						メールアドレス
 <%-- 						<span class="label label-danger">必須</span> --%>
 					</label>
-					<input type="email" id="mail" class="form-control" />
+					<input type="email" id="mail" name=""  class="form-control" />
 				</div>
 				<div class="form-group">
 					<label for="password">
 						パスワード
 <%-- 						<span class="label label-danger">必須</span> --%>
 					</label>
-					<input type="password" class="form-control">
+					<input type="password" name="" class="form-control">
 				</div>
 
 				<button type="submit" class="btn btn-primary center-block" id="submit">
