@@ -65,7 +65,7 @@
               <span class="label label-danger">必須</span>
             </label>
 
-            <input id="zip01" name="zip01" maxlength="8" class="form-control" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" placeholder="ハイフン除く数字7桁" pattern="\d{3}-?\d{4}">
+            <input id="zip01" name="zip01" maxlength="8" class="form-control" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" placeholder="000-0000もしくは0000000" pattern="\d{3}-?\d{4}">
           </div>
 
            <div class="form-group">
