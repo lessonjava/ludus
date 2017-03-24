@@ -26,12 +26,12 @@ public class SignUpAction extends ActionSupport{
 	/**
 	 * 郵便番号
 	 */
-	private String postal;
+	private String zip01;
 
 	/**
 	 * 住所（都道府県・市区町村）
 	 */
-	private String address1;
+	private String addr11;
 
 	/**
 	 * 住所（番地）
@@ -53,7 +53,7 @@ public class SignUpAction extends ActionSupport{
 		String result = ERROR;
 
 		SignUpDAO dao = new SignUpDAO();
-		int count = dao.insert(password, nameKanji, nameHira, postal, address1, address2, phoneNumber, phoneEmail);
+		int count = dao.insert(password, nameKanji, nameHira, zip01, addr11, address2, phoneNumber, phoneEmail);
 		if(count!=0){
 			result = SUCCESS;
 		}
@@ -111,34 +111,34 @@ public class SignUpAction extends ActionSupport{
 
 
 	/**
-	 * @return postal
+	 * @return zip01
 	 */
-	public String getPostal() {
-		return postal;
+	public String getZip01() {
+		return zip01;
 	}
 
 
 	/**
-	 * @param postal セットする postal
+	 * @param zip01 セットする zip01
 	 */
-	public void setPostal(String postal) {
-		this.postal = postal;
+	public void setZip01(String zip01) {
+		this.zip01 = zip01;
 	}
 
 
 	/**
-	 * @return address1
+	 * @return addr11
 	 */
-	public String getAddress1() {
-		return address1;
+	public String getAddr11() {
+		return addr11;
 	}
 
 
 	/**
-	 * @param address1 セットする address1
+	 * @param addr11 セットする addr11
 	 */
-	public void setAddress1(String address1) {
-		this.address1 = address1;
+	public void setAddr11(String addr11) {
+		this.addr11 = addr11;
 	}
 
 
@@ -188,5 +188,6 @@ public class SignUpAction extends ActionSupport{
 	public void setPhoneEmail(String phoneEmail) {
 		this.phoneEmail = phoneEmail;
 	}
+
 
 }

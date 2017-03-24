@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="container">
-      <form  class="center-block">
+      <form  class="center-block" action="SignUpAction">
         <fieldset>
           <legend>会員登録フォーム</legend>
           <p>必須項目を入力してから登録してください。</p>
@@ -29,7 +29,7 @@
               メールアドレス
               <span class="label label-danger">必須</span>
             </label>
-            <input type="email" id="e-mail" class="form-control" placeholder="メールアドレスを入力してください"/>
+            <input type="email" id="e-mail" name="phoneEmail" class="form-control" placeholder="メールアドレスを入力してください"/>
           </div>
 
 
@@ -39,7 +39,7 @@
               <span class="label label-danger">必須</span>
             </label>
             <p class="help-block">8文字以上でご記入ください</p>
-            <input type="password" id="password" class="form-control" placeholder="パスワードを入力してください"/ pattern="^[0-9A-Za-z]+$" minlength="8">
+            <input type="password" id="password" name="password"  class="form-control" placeholder="パスワードを入力してください"/ pattern="^[0-9A-Za-z]+$" minlength="8">
           </div>
 
            <div class="form-group">
@@ -48,7 +48,7 @@
               <span class="label label-danger">必須</span>
             </label>
             <p class="help-block">漢字でご記入ください。</p>
-            <input type="text" id="username" class="form-control"placeholder="名前を入力してください"  pattern="[\u4E00-\u9FFF]*"/>
+            <input type="text" id="username" name="nameKanji"  class="form-control" placeholder="名前を入力してください"  pattern="[\u4E00-\u9FFF]*"/>
           </div>
 
            <div class="form-group">
@@ -56,7 +56,7 @@
               ふりがな
               <span class="label label-danger">必須</span>
             </label>
-            <input type="text" id="username" class="form-control"placeholder="なまえを入力してください" pattern="[\u3041-\u3096]*" />
+            <input type="text" id="username"  name="nameHira" class="form-control"placeholder="なまえを入力してください" pattern="[\u3041-\u3096]*" />
           </div>
 
            <div class="form-group">
@@ -80,7 +80,7 @@
 
            <div class="form-group">
              <p class="help-block">マンション名は必ず記入してください。</p>
-             <input type="text" id="a" name="a" class="form-control" placeholder="番地・ビル名" pattern="[\u4E00-\u9FFF\u3040-\u309Fー0-9０-９\-－]*">
+             <input type="text" name="address2" class="form-control" placeholder="番地・ビル名" pattern="[\u4E00-\u9FFF\u3040-\u309Fー0-9０-９\-－]*">
           </div>
 
            <div class="form-group">
@@ -88,7 +88,7 @@
               電話番号(半角数字)
               <span class="label label-danger">必須</span>
             </label>
-            <input type="tel" id="username" class="form-control"placeholder="000-0000-0000もしくは00000000000" pattern="^\d{3}-\d{4}-\d{4}$|^\d{11}$" maxlength="14" />
+            <input type="tel" id="username"  name="phoneNumber"  class="form-control" placeholder="000-0000-0000もしくは00000000000" pattern="^\d{3}-\d{4}-\d{4}$|^\d{11}$" maxlength="14" />
           </div>
 
 <!--           <div class="checkbox"> -->
