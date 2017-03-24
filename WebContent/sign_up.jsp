@@ -48,7 +48,7 @@
               <span class="label label-danger">必須</span>
             </label>
             <p class="help-block">漢字でご記入ください。</p>
-            <input type="text" id="username" name="nameKanji"  class="form-control" placeholder="名前を入力してください"  pattern="[\u4E00-\u9FFF]*"/>
+            <input type="text" id="username" name="nameKanji"  class="form-control" placeholder="名前を入力してください"  />
           </div>
 
            <div class="form-group">
