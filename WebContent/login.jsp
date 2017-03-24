@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href=" css/login.css">
-<title>Template</title>
+<title>ログイン画面</title>
 </head>
 <body>
 	<div class="container">
@@ -39,7 +39,7 @@
 					<input type="password" class="form-control">
 				</div>
 
-				<button type="submit" class="btn btn-primary" id="submit">
+				<button type="submit" class="btn btn-primary center-block" id="submit">
 					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
 					ログイン
 				</button>
