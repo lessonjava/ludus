@@ -39,21 +39,21 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="./img/b03.png" alt="hogehoge">
+							<img src="./img/m01.jpg" alt="hogehoge">
 							<div class="carousel-caption">
 								<h3>亀有</h3>
 								<p>コメント</p>
 							</div>
 						</div>
 						<div class="item">
-							<img src="./img/b03.png" alt="hogehoge">
+							<img src="./img/m02.jpg" alt="hogehoge">
 							<div class="carousel-caption">
 								<h3>西新井</h3>
 								<p>いいいいい</p>
 							</div>
 						</div>
 						<div class="item">
-							<img src="./img/b03.png" alt="hugahuga">
+							<img src="./img/m03.jpg" alt="hugahuga">
 							<div class="carousel-caption">
 								<h3>北千住</h3>
 								<p>あああああ</p>
