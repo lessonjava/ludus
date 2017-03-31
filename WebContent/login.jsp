@@ -11,6 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- ↓mobileでも崩れないよう？↓ -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<%--個別cssの読み込み --%>
 <link rel="stylesheet" href=" css/login.css">
 <%--共通cssの読み込み --%>
 <link rel="stylesheet" href="./css/main.css">

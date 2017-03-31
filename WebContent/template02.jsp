@@ -32,7 +32,7 @@
 		</div>
 	</div>
 
-	<%--jQueryの読み込み bootstrapよりさきに読み込まないといけない--%>
+	<%--jQueryの読み込み bootstrap.jsよりさきに読み込まないといけない--%>
 	<script
 		src="//ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<%--bootstrap.jsの読み込み --%>

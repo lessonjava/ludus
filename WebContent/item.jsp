@@ -10,9 +10,11 @@
 <title>商品詳細</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<%--共通cssの読み込み --%>
 <link rel="stylesheet" href="./css/main.css">
+<%--個別cssの読み込み --%>
 <link rel="stylesheet" href="./css/item.css">
-
+<%--個別jsの読み込み --%>
 <script src="js/item.js"></script>
 </head>
 <body>
