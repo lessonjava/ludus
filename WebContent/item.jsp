@@ -10,32 +10,52 @@
 <title>template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="css/main.css">
+
+<script src="js/item.js"></script>
 </head>
 <body>
 
 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12" style="background: #000;">
+			<div class="col-sm-12" style="background: #fff;">
 				<jsp:include page="header.jsp" /></div>
 		</div>
 
 		<div class="row">
 			<div class="col-sm-12" style="background: #ccc; height: 550px;">
 				<div class="row">
-					<div class="col-sm-9" style="background: #023; height: 550px;">商品画像</div>
+					<div class="col-sm-9" style="background: #023; height: 550px;">
+						<div id="content">
+							<div id="featured_img">
+								<img id="img"
+									src="https://www.imamura.biz/blog/wp-content/uploads/image01.png">
+							</div>
+							<div id="thumb_img" class="cf">
+								<img class="active"
+									src="https://www.imamura.biz/blog/wp-content/uploads/image01_thumb.png"
+									onclick="changeimg('https://www.imamura.biz/blog/wp-content/uploads/image01.png',this);">
+								<img
+									src="https://www.imamura.biz/blog/wp-content/uploads/image02_thumb.png"
+									onclick="changeimg('https://www.imamura.biz/blog/wp-content/uploads/image02.png',this);">
+								<img
+									src="https://www.imamura.biz/blog/wp-content/uploads/image03_thumb.png"
+									onclick="changeimg('https://www.imamura.biz/blog/wp-content/uploads/image03.png',this);">
+							</div>
+						</div>
+					</div>
 					<div class="col-sm-3" style="background: #fff; height: 550px;">
 						<!-- 							<div class="well" style="height: 460px"> -->
 						<div class="panel panel-default">
 							<div class="panel-heading" style="height: 100px;">
-								<h4>商品名</h4>
+								<h4><p>商品名ssergggggggggggggggggggggggggggggg</p></h4>
 							</div>
 							<div class="panel-body bg-success" style="height: 450px;">
 								<h4>￥5000円</h4>

@@ -19,6 +19,6 @@
 <title>Template</title>
 </head>
 <body>
-登録ありがとうざいました。
+登録ありがとうざいました。あ
 </body>
 </html>

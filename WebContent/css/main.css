@@ -1,0 +1,49 @@
+p{
+	width: auto;
+	word-wrap:break-word;
+}
+.cf:before,
+.cf:after{
+ content:"";
+ display:table;
+}
+
+.cf:after{
+ clear:both;
+}
+
+.cf{
+ zoom:1;
+}
+
+#content {
+ max-width: 650px;
+ margin: 3rem auto;
+ text-align: center;
+}
+
+#featured_img img,
+#thumb_img img {
+ max-width: 100%;
+}
+
+#thumb_img {
+ margin-top:2%;
+ img {
+ float:left;
+ max-width: 32%;
+ width: 32%;
+ cursor: pointer;
+ margin-right:2%;
+ border:2px solid #eee;
+ box-sizing:border-box;
+
+ &.active{
+ border:2px solid #cac6b8;
+ }
+
+ &:last-child{
+ margin-right:0;
+ }
+ }
+}
