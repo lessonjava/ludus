@@ -1,24 +1,27 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Template</title>
-    <!-- CSSの読み込み -->
-    <!--<link rel="stylesheet" href=".css">-->
-    <!-- bootstrap(CSS)の読み込み -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- IE9未満のブラウザをHTML5&CSS3対応させるために下のを読み込む -->
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  </head>
-  <body>
-<!--   <nav class="navbar navbar-fixed-top" role="navigation"> -->
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- ↓IEの表示を常に最新する↓ -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- ↓mobileでも崩れないよう？↓ -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<%--jQueryの読み込み bootstrapよりさきに読み込まないといけない--%>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<%--bootstrapの読み込み --%>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- 	<link rel="stylesheet" href=" .css">　css使わない場合消してください     -->
+<title>Template</title>
+</head>
+<body>
 
 <nav class="navbar navbar-inverse">
   <div class="container-fuild">
@@ -76,10 +79,9 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<!-- <hr style="margin: 40px 0;"> -->
-    <!-- jQueryの読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- bootstrap(JS)の読み込み -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </body>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
 </html>
