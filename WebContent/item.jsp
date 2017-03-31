@@ -51,7 +51,7 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-lg-3"
-				style="background: #fff; height: 550px;">
+				style="background: #fff; height: auto; margin: 3rem auto;">
 				<div class="panel panel-default">
 					<div class="panel-heading" style="height: aout;">
 						<h4>
