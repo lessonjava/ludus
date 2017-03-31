@@ -22,6 +22,27 @@
 <title>Template</title>
 </head>
 <body>
+	<div class="container">
+		<%--　ヘッダー --%>
+		<div class="row">
+			<div class="col-xs-12 col-lg-12" style="background: #fff;">
+				<jsp:include page="header.jsp" /></div>
+		</div>
+		<%--ヘッダー --%>
+
+
+
+
+		<%--フッター(ただの文字　未完成) --%>
+		<div class="row">
+			<div class="col-xs-12 col-lg-12 text-center"
+				style="background: #fff;">
+				<hr class="style-one">
+				<h1 style="margin: 3rem auto;">会社概要 利用規約</h1>
+			</div>
+		</div>
+		<%--フッター --%>
+	</div>
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
