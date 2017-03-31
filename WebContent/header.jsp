@@ -11,13 +11,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- ↓mobileでも崩れないよう？↓ -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<%--jQueryの読み込み bootstrapよりさきに読み込まないといけない--%>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <%--bootstrapの読み込み --%>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- 	<link rel="stylesheet" href=" .css">　css使わない場合消してください     -->
 <title>Template</title>
 </head>
