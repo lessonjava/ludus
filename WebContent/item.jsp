@@ -7,10 +7,11 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<title>template</title>
+<title>商品詳細</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/item.css">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
@@ -101,9 +102,9 @@
 
 		<div class="row">
 			<div class="col-xs-12 col-lg-12 text-center"
-				style="background: #fff; height: 100px;">
-				<hr style="margin: 40px 0; background: #000;">
-				<h1>会社概要 利用規約</h1>
+				style="background: #fff; ">
+				<hr class="style-one">
+				<h1 style="margin:3rem auto;">会社概要 利用規約</h1>
 			</div>
 		</div>
 	</div>
