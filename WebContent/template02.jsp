@@ -12,40 +12,30 @@
 
 <%--共通cssの読み込み --%>
 <link rel="stylesheet" href="./css/main.css">
-<%--jQueryの読み込み bootstrapよりさきに読み込まないといけない--%>
-<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-<%--bootstrapの読み込み --%>
+<%--bootstrap.cssの読み込み --%>
 <link rel="stylesheet"
 	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script
-	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <title>Template</title>
 </head>
 <body>
 	<div class="container">
-		<%--　ヘッダー --%>
 		<div class="row">
-			<div class="col-xs-12 col-lg-12" style="background: #fff;">
-				<jsp:include page="header.jsp" /></div>
+			<div class="col-xs-12 col-lg-12" style="background: #fff;"></div>
 		</div>
-		<%--ヘッダー --%>
 
 
 
 
-		<%--フッター(ただの文字　未完成) --%>
 		<div class="row">
 			<div class="col-xs-12 col-lg-12 text-center"
-				style="background: #fff;">
-				<hr class="style-one">
-				<h1 style="margin: 3rem auto;">会社概要　　利用規約</h1>
-			</div>
+				style="background: #fff;"></div>
 		</div>
-		<%--フッター --%>
 	</div>
 
+	<%--jQueryの読み込み bootstrapよりさきに読み込まないといけない--%>
 	<script
 		src="//ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<%--bootstrap.jsの読み込み --%>
 	<script
 		src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>

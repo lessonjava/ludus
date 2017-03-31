@@ -11,15 +11,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- ↓mobileでも崩れないよう？↓ -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<%--jQueryの読み込み bootstrapよりさきに読み込まないといけない--%>
-<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-<%--bootstrapの読み込み --%>
-<link rel="stylesheet"
-	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script
-	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href=" css/login.css">
-<link rel="stylesheet" href=" css/main.css">
+<%--共通cssの読み込み --%>
+<link rel="stylesheet" href="./css/main.css">
 <title>ログイン画面</title>
 </head>
 <body>
@@ -62,9 +56,5 @@
 		</div>
 		<%--フッター --%>
 	</div>
-		<script
-		src="//ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script
-		src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
