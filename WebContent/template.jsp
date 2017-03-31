@@ -38,7 +38,7 @@
 			<div class="col-xs-12 col-lg-12 text-center"
 				style="background: #fff;">
 				<hr class="style-one">
-				<h1 style="margin: 3rem auto;">会社概要 利用規約</h1>
+				<h1 style="margin: 3rem auto;">会社概要　　利用規約</h1>
 			</div>
 		</div>
 		<%--フッター --%>

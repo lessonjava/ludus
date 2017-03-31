@@ -19,7 +19,7 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<title>Template</title>
+<title>新規登録</title>
 </head>
 <body>
 	<div class="container">
@@ -30,7 +30,7 @@
 		</div>
 		<%--ヘッダー --%>
 
-<form  class="center-block" action="SignUpAction" style="max-width: 500px;">
+<form  class="center-block" action="SignUpAction" style="max-width: 500px; margin: 5rem auto;">
         <fieldset>
           <legend>会員登録フォーム</legend>
           <p>必須項目を入力してから登録してください。</p>
@@ -121,7 +121,7 @@
 			<div class="col-xs-12 col-lg-12 text-center"
 				style="background: #fff;">
 				<hr class="style-one">
-				<h1 style="margin: 3rem auto;">会社概要 利用規約</h1>
+				<h1 style="margin: 3rem auto;">会社概要　　利用規約</h1>
 			</div>
 		</div>
 		<%--フッター --%>
