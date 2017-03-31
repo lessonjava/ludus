@@ -13,11 +13,9 @@
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="./css/item.css">
 <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script src="js/item.js"></script>
 </head>
@@ -32,32 +30,32 @@
 
 		<div class="row">
 
-			<div class="col-xs-12 col-lg-9" style="background: #fff;">
+			<div class="col-xs-12 col-lg-9"
+				style="background: url(./img/back.jpg);">
 				<div id="content">
 					<div id="featured_img">
 						<img id="img"
-							src="https://www.imamura.biz/blog/wp-content/uploads/image01.png">
+							src="//www.imamura.biz/blog/wp-content/uploads/image01.png">
 					</div>
 					<div id="thumb_img" class="cf">
 						<img class="active"
-							src="https://www.imamura.biz/blog/wp-content/uploads/image01_thumb.png"
-							onclick="changeimg('https://www.imamura.biz/blog/wp-content/uploads/image01.png',this);">
+							src="//www.imamura.biz/blog/wp-content/uploads/image01_thumb.png"
+							onclick="changeimg('//www.imamura.biz/blog/wp-content/uploads/image01.png',this);">
 						<img
-							src="https://www.imamura.biz/blog/wp-content/uploads/image02_thumb.png"
-							onclick="changeimg('https://www.imamura.biz/blog/wp-content/uploads/image02.png',this);">
+							src="//www.imamura.biz/blog/wp-content/uploads/image02_thumb.png"
+							onclick="changeimg('//www.imamura.biz/blog/wp-content/uploads/image02.png',this);">
 						<img
-							src="https://www.imamura.biz/blog/wp-content/uploads/image03_thumb.png"
-							onclick="changeimg('https://www.imamura.biz/blog/wp-content/uploads/image03.png',this);">
+							src="//www.imamura.biz/blog/wp-content/uploads/image03_thumb.png"
+							onclick="changeimg('//www.imamura.biz/blog/wp-content/uploads/image03.png',this);">
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-lg-3"
-				style="background: #fff; height: auto; margin: 3rem auto;">
+				style="background: url(./img/back.jpg); height: auto; margin: 3rem auto;">
 				<div class="panel panel-default">
-					<div class="panel-heading" style="height: aout;">
-						<h4>
-							<p>商品名ssergggggggggggggggggggggggggggggg</p>
-						</h4>
+					<div class="panel-heading" style="height: auto;">
+						<h4 style="word-wrap: break-word;">
+							商品名ssergggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</h4>
 					</div>
 
 					<div class="panel-body bg-success" style="height: auto;">
@@ -102,17 +100,15 @@
 
 		<div class="row">
 			<div class="col-xs-12 col-lg-12 text-center"
-				style="background: #fff; ">
+				style="background: #fff;">
 				<hr class="style-one">
-				<h1 style="margin:3rem auto;">会社概要　　利用規約</h1>
+				<h1 style="margin: 3rem auto;">会社概要 利用規約</h1>
 			</div>
 		</div>
 	</div>
 
 
 	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		src="//ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </body>
 </html>
