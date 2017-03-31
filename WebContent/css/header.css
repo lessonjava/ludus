@@ -2,11 +2,11 @@
     padding-top: 70px;
 }
 
-.navbar-fixed-top .nav {
+.navbar .nav {
     padding: 15px 0;
 }
 
-.navbar-fixed-top .navbar-brand {
+.navbar .navbar-brand {
     padding: 0 15px;
 }
 
@@ -15,7 +15,7 @@
         padding-top: 100px;
     }
 
-    .navbar-fixed-top .navbar-brand {
+    .navbar .navbar-brand {
         padding: 15px 0;
     }
 }

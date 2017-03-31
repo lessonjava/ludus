@@ -17,7 +17,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-inverse navbar-fixed-top all" role="navigation">
+	<nav class="navbar navbar-inverse  all" role="navigation">
 		<div class="container-fuild">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
