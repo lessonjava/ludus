@@ -19,6 +19,7 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="./js/signup.js"></script>
 <title>新規登録</title>
 </head>
 <body>
@@ -102,12 +103,12 @@
             <input type="tel" id="username"  name="phoneNumber"  class="form-control" placeholder="000-0000-0000もしくは00000000000" pattern="^\d{3}-\d{4}-\d{4}$|^\d{11}$" maxlength="14" />
           </div>
 
-<!--           <div class="checkbox"> -->
-<!--             <label> -->
-<!--               <input type="checkbox" id="agreement" value="true" /> -->
-<!--               同意する -->
-<!--             </label> -->
-<!--           </div> -->
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="agreement" value="true" />
+              同意する
+            </label>
+          </div>
           <button type="submit" class="btn btn-primary" id="submit">
             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
             登録する
