@@ -25,8 +25,15 @@ public class SelectUsersDAO {
 			while(rs.next()) {
 				UsersDTO dto=new UsersDTO();
 				dto.setUserID(rs.getInt("user_id"));
-				dto.setPhoneEmail(rs.getString("phone_email"));
 				dto.setPassword(rs.getString("password"));
+				dto.setNameKanji(rs.getString("name_kanji"));
+				dto.setNameHira(rs.getString("name_hira"));
+				dto.setPostal(rs.getString("postal"));
+				dto.setAddress1(rs.getString("address1"));
+				dto.setAddress2(rs.getString("address2"));
+				dto.setPhoneNumber(rs.getString("phone_number"));
+				dto.setPhoneEmail(rs.getString("phone_email"));
+				dto.setLoginFlg(rs.getBoolean("login_flg"));
 				dto.setUserFlg(rs.getInt("user_flg"));
 				usersList.add(dto);
 			}
