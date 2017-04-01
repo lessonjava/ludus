@@ -64,7 +64,7 @@
 								class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>ようこそ！！<s:property value="#session.name" />
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="my_page.jsp"><span
+								<li><a href='<s:url action="MyPageAction"></s:url>'><span
 										class="glyphicon glyphicon-user" aria-hidden="true"></span>マイページ</a></li>
 								<li><a href=""><span class="glyphicon glyphicon-book"
 										aria-hidden="true"></span>購入履歴</a></li>

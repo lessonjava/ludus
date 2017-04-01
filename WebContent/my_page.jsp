@@ -29,8 +29,8 @@
 		<%--ヘッダー --%>
 
 		<div class="row">
-			<div class="col-xs-8 col-lg-8 col-xs-offset-2"
-				style="background: #fff;">
+			<div class="col-xs-12 col-lg-8 col-lg-offset-2"
+				style="background: #fff; height:500px;">
 				<div class="panel panel-default" style="margin: 5rem auto;">
 					<div class="panel-heading">
 						<!-- カプセル・メニュー -->
@@ -38,7 +38,7 @@
 							<li class="active"><a href="#sampleContentA"
 								data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>登録情報</a></li>
 							<li><a href="#sampleContentB" data-toggle="tab"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>購入履歴</a></li>
-							<li><a href="#sampleContentC" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>お気に入り</a></li>
+							<li><a href="#sampleContentC" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>お気に入り</a></li>
 						</ul>
 					</div>
 					<div class="panel-body">
@@ -48,30 +48,37 @@
 								<div class="table-responsive">
 									<table class="table table-hover table-bordered">
 										<tbody>
+										<s:iterator value="userList">
 											<tr>
 												<th class="info">名前</th>
-												<td>山田</td>
+												<td><s:property value="nameKanji" /></td>
+
+											</tr>
+											<tr>
+												<th class="info">ひらがな</th>
+												<td><s:property value="nameHira" /></td>
 
 											</tr>
 											<tr>
 												<th class="info">メールアドレス</th>
-												<td>aaaaa</td>
+												<td><s:property value="phoneEmail" /></td>
 
 											</tr>
 											<tr>
 												<th class="info">郵便番号</th>
-												<td>000-0000</td>
+												<td><s:property value="postal" /></td>
 											</tr>
 											<tr>
 												<th class="info">住所</th>
-												<td>東京都aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+												<td><s:property value="address1" /><s:property value="address2" /></td>
 
 											</tr>
 											<tr>
 												<th class="info">電話番号</th>
-												<td>000-0000-0000</td>
+												<td><s:property value="phoneNumber" /></td>
 
 											</tr>
+											</s:iterator>
 										</tbody>
 									</table>
 								</div>
