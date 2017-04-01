@@ -27,35 +27,40 @@
 				<jsp:include page="header.jsp" /></div>
 		</div>
 		<%--ヘッダー --%>
+		<div class="row">
+			<div class="col-xs-12 col-lg-12" style="background: #fff;">
+				<form class="center-block" style="margin: 5rem auto;" action="LoginAction">
+					<fieldset>
+						<legend>ログイン画面</legend>
+						<p>メールアドレスとパスワードを入力してください</p>
+						<div class="form-group">
+							<label for="mail"> メールアドレス <%-- 						<span class="label label-danger">必須</span> --%>
+							</label> <input type="email" id="mail" name="email" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="password"> パスワード <%-- 						<span class="label label-danger">必須</span> --%>
+							</label> <input type="password" name="password" class="form-control">
+						</div>
 
-		<form class="center-block" style="margin: 5rem auto;">
-			<fieldset>
-				<legend>ログイン画面</legend>
-				<p>メールアドレスとパスワードを入力してください</p>
-				<div class="form-group">
-					<label for="mail"> メールアドレス <%-- 						<span class="label label-danger">必須</span> --%>
-					</label> <input type="email" id="mail" name="" class="form-control" />
-				</div>
-				<div class="form-group">
-					<label for="password"> パスワード <%-- 						<span class="label label-danger">必須</span> --%>
-					</label> <input type="password" name="" class="form-control">
-				</div>
-
-				<button type="submit" class="btn btn-primary center-block"
-					id="submit">
-					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-					ログイン
-				</button>
-			</fieldset>
-		</form>
+						<button type="submit" class="btn btn-primary center-block"
+							id="submit">
+							<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+							ログイン
+						</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
 
 		<%--フッター(ただの文字　未完成) --%>
 		<div class="row">
 			<div class="col-xs-12 col-lg-12 text-center"
 				style="background: #fff;">
-				<p id="pageTop"><a href="#">⇧</a></p>
-				<hr class="style-one" style="margin:200px 0px 0px 0px;">
-				<h1 style="margin: 3rem auto;">会社概要　　利用規約</h1>
+				<p id="pageTop">
+					<a href="#">⇧</a>
+				</p>
+				<hr class="style-one" style="margin: 200px 0px 0px 0px;">
+				<h1 style="margin: 3rem auto;">会社概要 利用規約</h1>
 			</div>
 		</div>
 		<%--フッター --%>

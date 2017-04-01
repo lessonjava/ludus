@@ -77,9 +77,38 @@
 
 
 		<div class="row">
-			<!-- 			<div class="col-sm-2" style="background: #ddd; height: 750px;">サイドバー</div> -->
-			<div class=" col-xs-12 col-lg-12"
-				style="background:url(./img/back.jpg); height: 750px;">メイン</div>
+			<div class="col-xs-8 col-lg-8 col-xs-offset-2" style="background: #fff;">
+				<div class="table-responsive">
+					<table class="table table-hover table-bordered">
+						<tbody>
+							<tr>
+								<th class="info">名前</th>
+								<td>山田</td>
+
+							</tr>
+							<tr>
+								<th class="info">メールアドレス</th>
+								<td>aaaaa</td>
+
+							</tr>
+							<tr>
+								<th class="info">郵便番号</th>
+								<td>000-0000</td>
+							</tr>
+							<tr>
+								<th class="info">住所</th>
+								<td>東京都aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+
+							</tr>
+							<tr>
+								<th class="info">電話番号</th>
+								<td>000-0000-0000</td>
+
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 		</div>
 
 
