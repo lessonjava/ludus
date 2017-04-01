@@ -61,7 +61,7 @@
 						<li class="dropdown"><a href="" class="dropdown-toggle"
 							data-toggle="dropdown" role="button" aria-haspopup="true"
 							aria-expanded="false"> <span
-								class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>ようこそ！！<s:property value="#session.name" />
+								class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>ようこそ！！<s:property value="#session.name" />さん
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href='<s:url action="MyPageAction"></s:url>'><span
