@@ -44,7 +44,7 @@ public class SelectUsersDAO {
 
 	public ArrayList<UsersDTO> select() {
 		DBConnector db = new DBConnector();
-		try (Connection con = db.getConnection("test");
+		try (Connection con = db.getConnection("ludus");
 				PreparedStatement ps = createPreparedStatement(con);
 				ResultSet rs = ps.executeQuery()) {
 			while (rs.next()) {

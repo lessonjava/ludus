@@ -28,6 +28,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
 				result = SUCCESS;
 			} else {
 				session.put("userId", userList.get(0).getUserID());
+				session.put("name", userList.get(0).getNameKanji());
 				result = LOGIN;
 			}
 		}

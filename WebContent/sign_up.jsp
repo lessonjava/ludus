@@ -17,6 +17,7 @@
 <script src="./js/main.js"></script>
 <%--個別jsの読み込み --%>
 <script src="./js/signup.js"></script>
+<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
 <title>新規登録</title>
 </head>
 <body>

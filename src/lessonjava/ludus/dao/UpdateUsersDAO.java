@@ -10,7 +10,7 @@ import lessonjava.ludus.util.DBConnector;
 public class UpdateUsersDAO {
 	public int insert(String password,String nameKanji, String nameHira, String postal, String address1, String address2, String phoneNumber, String phoneEmail) {
 		DBConnector db =new DBConnector();
-		Connection con = db.getConnection("test");
+		Connection con = db.getConnection("ludus");
 		int count = 0;
 		String sql = "insert into users(password,name_kanji,name_hira,postal,address1,address2,phone_number,phone_email)values(?,?,?,?,?,?,?,?)";
 
