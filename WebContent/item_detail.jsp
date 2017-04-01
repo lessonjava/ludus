@@ -78,7 +78,7 @@
 								</select>
 							</div>
 							<div class="text-center" style="padding: 30px;">
-								<button type="button"
+								<button type="button" onClick="location.href='cart.jsp'"
 									class="btn btn-primary center-block btn-lg btn-block">カートに入れる</button>
 							</div>
 						</form>
