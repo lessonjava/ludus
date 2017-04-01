@@ -18,17 +18,14 @@
 <title>Template</title>
 </head>
 <body>
+
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-lg-12" style="background: #fff;"></div>
+			<div class="col-xs-12 col-lg-12" style="background: red;">a</div>
 		</div>
-
-
-
-
 		<div class="row">
-			<div class="col-xs-12 col-lg-12 text-center"
-				style="background: #fff;"></div>
+			<div class="col-xs-12 col-lg-12"
+				style="background: #000;">i</div>
 		</div>
 	</div>
 
