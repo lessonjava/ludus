@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import lessonjava.ludus.util.DBConnector;
 
 
-public class SignUpDAO {
+public class UpdateUsersDAO {
 	public int insert(String password,String nameKanji, String nameHira, String postal, String address1, String address2, String phoneNumber, String phoneEmail) {
 		DBConnector db =new DBConnector();
 		Connection con = db.getConnection("test");

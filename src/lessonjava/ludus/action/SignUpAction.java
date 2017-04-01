@@ -4,7 +4,7 @@ import java.net.UnknownHostException;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-import lessonjava.ludus.dao.SignUpDAO;
+import lessonjava.ludus.dao.UpdateUsersDAO;
 
 public class SignUpAction extends ActionSupport{
 
@@ -52,7 +52,7 @@ public class SignUpAction extends ActionSupport{
 	public String execute() throws UnknownHostException {
 		String result = ERROR;
 
-		SignUpDAO dao = new SignUpDAO();
+		UpdateUsersDAO dao = new UpdateUsersDAO();
 		int count = dao.insert(password, nameKanji, nameHira, zip01, addr11, address2, phoneNumber, phoneEmail);
 		if(count!=0){
 			result = SUCCESS;
