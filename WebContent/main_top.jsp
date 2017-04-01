@@ -9,13 +9,16 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<%--jQueryの読み込み--%>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <%--共通cssの読み込み --%>
 <link rel="stylesheet" href="./css/main.css">
+<%--共通jsの読み込み --%>
+<script src="./js/main.js"></script>
 <title>Template</title>
 </head>
 <body>
-	<div class="container" >
+	<div class="container">
 		<%--　ヘッダー --%>
 		<div class="row">
 			<div class="col-xs-12 col-lg-12" style="background: #fff;">
@@ -74,7 +77,7 @@
 		<div class="row">
 			<!-- 			<div class="col-sm-2" style="background: #ddd; height: 750px;">サイドバー</div> -->
 			<div class=" col-xs-12 col-lg-12"
-				style="background:url(./img/back.jpg); height: 750px;">メイン</div>
+				style="background: url(./img/back.jpg); height: 750px;">メイン</div>
 		</div>
 
 
@@ -82,8 +85,9 @@
 		<div class="row">
 			<div class="col-xs-12 col-lg-12 text-center"
 				style="background: #fff;">
+				<p id="pageTop"><a href="#">⇧</a></p>
 				<hr class="style-one">
-				<h1 style="margin: 3rem auto;">会社概要　　利用規約</h1>
+				<h1 style="margin: 3rem auto;">会社概要 利用規約</h1>
 			</div>
 		</div>
 		<%--フッター --%>

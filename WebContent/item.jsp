@@ -10,6 +10,8 @@
 <title>商品詳細</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<%--jQueryの読み込み--%>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <%--共通cssの読み込み --%>
 <link rel="stylesheet" href="./css/main.css">
 <%--個別cssの読み込み --%>
@@ -99,6 +101,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-lg-12 text-center"
 				style="background: #fff;">
+				<p id="pageTop"><a href="#">⇧</a></p>
 				<hr class="style-one">
 				<h1 style="margin: 3rem auto;">会社概要 利用規約</h1>
 			</div>

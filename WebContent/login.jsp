@@ -7,14 +7,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<!-- ↓IEの表示を常に最新する↓ -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- ↓mobileでも崩れないよう？↓ -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<%--jQueryの読み込み--%>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <%--個別cssの読み込み --%>
 <link rel="stylesheet" href=" css/login.css">
 <%--共通cssの読み込み --%>
 <link rel="stylesheet" href="./css/main.css">
+<%--共通jsの読み込み --%>
+<script src="./js/main.js"></script>
 <title>ログイン画面</title>
 </head>
 <body>
@@ -51,6 +53,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-lg-12 text-center"
 				style="background: #fff;">
+				<p id="pageTop"><a href="#">⇧</a></p>
 				<hr class="style-one" style="margin:200px 0px 0px 0px;">
 				<h1 style="margin: 3rem auto;">会社概要　　利用規約</h1>
 			</div>

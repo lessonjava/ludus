@@ -9,9 +9,12 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<%--jQueryの読み込み--%>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <%--共通cssの読み込み --%>
 <link rel="stylesheet" href="./css/main.css">
+<%--共通jsの読み込み --%>
+<script src="./js/main.js"></script>
 <%--個別jsの読み込み --%>
 <script src="./js/signup.js"></script>
 <title>新規登録</title>
@@ -116,6 +119,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-lg-12 text-center"
 				style="background: #fff;">
+				<p id="pageTop"><a href="#">⇧</a></p>
 				<hr class="style-one">
 				<h1 style="margin: 3rem auto;">会社概要 利用規約</h1>
 			</div>
