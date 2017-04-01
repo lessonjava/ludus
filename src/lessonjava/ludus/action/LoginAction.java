@@ -18,8 +18,8 @@ public class LoginAction extends ActionSupport implements SessionAware {
 
 	public String execute() {
 		String result = ERROR;
-		SelectUsersDAO dao = new SelectUsersDAO();
-		userList = dao.select(email, password);
+		SelectUsersDAO dao = new SelectUsersDAO(email,password);
+		userList = dao.select();
 
 		if (userList.size() != 0) {
 			if (userList.get(0).getUserFlg() == 1) {
