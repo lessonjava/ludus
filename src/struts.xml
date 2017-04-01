@@ -18,9 +18,15 @@
 
 		<action name="LoginAction" class="lessonjava.ludus.action.LoginAction"
 			method="execute">
-			<result name="success" >sign_up_ok.jsp</result>
+			<result name="success" >main_top.jsp</result>
 			<result name="error">template02.jsp</result>
 			<result name="login">template01.jsp</result>
+		</action>
+
+				<action name="LoginOutAction" class="lessonjava.ludus.action.LoginOutAction"
+			method="execute">
+			<result name="success" >main_top.jsp</result>
+			<result name="error"></result>
 		</action>
 
 	</package>

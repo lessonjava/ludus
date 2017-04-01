@@ -61,7 +61,7 @@
 						<li class="dropdown"><a href="" class="dropdown-toggle"
 							data-toggle="dropdown" role="button" aria-haspopup="true"
 							aria-expanded="false"> <span
-								class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>ようこそ！！太郎さん
+								class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>ようこそ！！<s:property value="#session.name" />
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="my_page.jsp"><span
@@ -71,15 +71,15 @@
 								<li><a href=""><span class="glyphicon glyphicon-star"
 										aria-hidden="true"></span>お気に入り</a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href=""><span
+								<li><a href='<s:url action="LoginOutAction"></s:url>'><span
 										class="glyphicon glyphicon-log-out" aria-hidden="true"></span>ログアウト</a></li>
 							</ul></li>
 					</s:if>
 					<s:else>
 						<li><a href="login.jsp"><span
-								class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>ログイン</a></li>
+								class="glyphicon glyphicon-log-in" aria-hidden="true"></span>ログイン</a></li>
 						<li><a href="sign_up.jsp"><span
-								class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>新規登録</a></li>
+								class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>新規登録</a></li>
 					</s:else>
 					<li><a href=""><span
 							class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>カート</a></li>
