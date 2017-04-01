@@ -29,7 +29,7 @@
 		<%--ヘッダー --%>
 		<div class="row">
 			<div class="col-xs-12 col-lg-12" style="background: #fff;">
-				<form class="center-block" style="margin: 5rem auto;" action="LoginAction">
+				<s:form class="center-block" style="margin: 5rem auto;" action="LoginAction">
 					<fieldset>
 						<legend>ログイン画面</legend>
 						<p>メールアドレスとパスワードを入力してください</p>
@@ -48,7 +48,7 @@
 							ログイン
 						</button>
 					</fieldset>
-				</form>
+				</s:form>
 			</div>
 		</div>
 
