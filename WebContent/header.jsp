@@ -47,8 +47,7 @@
 							<li><a href="item_list.jsp">あんぱん</a></li>
 							<li><a href="">しょくぱん</a></li>
 							<li><a href="">カレーパン</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="">Separated link</a></li>
+							<li><a href="">ブラウニー</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="">One more separated link</a></li>
 						</ul></li>
