@@ -6,15 +6,17 @@ import org.apache.struts2.interceptor.SessionAware;
 
 import com.opensymphony.xwork2.ActionSupport;
 
+import lessonjava.ludus.dto.UsersDTO;
+
 public class LoginOutAction extends ActionSupport implements SessionAware {
-	private int userId;
+	private UsersDTO dto = new UsersDTO();
 	private Map<String, Object> session;
 
 	public String execute() {
 		String result = ERROR;
-		if (session.get("userId") != null) {
-			userId = (int) session.get("userId");
-			session.clear();
+		if (session.get("userList") != null) {
+			dto = (UsersDTO) session.get("userList");
+			session.remove("userList");
 			result = SUCCESS;
 		}
 
@@ -25,16 +27,6 @@ public class LoginOutAction extends ActionSupport implements SessionAware {
 	/**
 	 * @return userId
 	 */
-	public int getUserId() {
-		return userId;
-	}
-
-	/**
-	 * @param userId セットする userId
-	 */
-	public void setUserId(int userId) {
-		this.userId = userId;
-	}
 
 	/**
 	 * @return session
@@ -44,7 +36,23 @@ public class LoginOutAction extends ActionSupport implements SessionAware {
 	}
 
 	/**
-	 * @param session セットする session
+	 * @return dto
+	 */
+	public UsersDTO getDto() {
+		return dto;
+	}
+
+	/**
+	 * @param dto
+	 *            セットする dto
+	 */
+	public void setDto(UsersDTO dto) {
+		this.dto = dto;
+	}
+
+	/**
+	 * @param session
+	 *            セットする session
 	 */
 	public void setSession(Map<String, Object> session) {
 		this.session = session;

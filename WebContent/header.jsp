@@ -52,16 +52,16 @@
 							<li role="separator" class="divider"></li>
 							<li><a href="">One more separated link</a></li>
 						</ul></li>
-					<li><a href=""><span class="glyphicon glyphicon-envelope"
+					<li><a href="inquiry.jsp"><span class="glyphicon glyphicon-envelope"
 							aria-hidden="true"></span>お問い合わせ</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
-					<s:if test="#session.userId != null">
+					<s:if test="#session.userList != null">
 						<li class="dropdown"><a href="" class="dropdown-toggle"
 							data-toggle="dropdown" role="button" aria-haspopup="true"
 							aria-expanded="false"> <span
-								class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>ようこそ！！<s:property value="#session.name" />さん
+								class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>ようこそ！<s:property value="#session.userList.nameKanji" />さん
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href='<s:url action="MyPageAction"></s:url>'><span
