@@ -30,61 +30,75 @@
 
 		<div class="row">
 			<div class="col-xs-12 col-lg-8 col-lg-offset-2"
-				style="background: #fff; height:500px;">
+				style="background: #fff; height: 500px;">
 				<div class="panel panel-default" style="margin: 5rem auto;">
 					<div class="panel-heading">
 						<!-- カプセル・メニュー -->
 						<ul class="nav nav-pills nav-justified">
-							<li class="active"><a href="#sampleContentA"
-								data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>登録情報</a></li>
-							<li><a href="#sampleContentB" data-toggle="tab"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>購入履歴</a></li>
-							<li><a href="#sampleContentC" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>お気に入り</a></li>
+
+								<li <s:if test="type==1">class="active"</s:if>><a href="#sampleContentA"
+									data-toggle="tab"><span class="glyphicon glyphicon-user"
+										aria-hidden="true"></span>登録情報</a></li>
+
+
+								<li <s:if test="type==2">class="active"</s:if>><a href="#sampleContentB"
+									data-toggle="tab"><span class="glyphicon glyphicon-book"
+										aria-hidden="true"></span>購入履歴</a></li>
+
+
+
+								<li <s:if test="type==3">class="active"</s:if>><a href="#sampleContentC"
+									data-toggle="tab"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>お気に入り</a></li>
+
+
 						</ul>
 					</div>
 					<div class="panel-body">
 						<!-- 内容 -->
 						<div class="tab-content">
-							<div class="tab-pane  active" id="sampleContentA">
+							<div class="tab-pane  <s:if test="type==1">active</s:if>" id="sampleContentA">
 								<div class="table-responsive">
 									<table class="table table-hover table-bordered">
 										<tbody>
-										<s:iterator value="userList">
-											<tr>
-												<th class="info">名前</th>
-												<td><s:property value="nameKanji" /></td>
+											<s:iterator value="userList">
+												<tr>
+													<th class="info"><s:property value="#session.type" />名前</th>
+													<td><s:property value="nameKanji" /></td>
 
-											</tr>
-											<tr>
-												<th class="info">ひらがな</th>
-												<td><s:property value="nameHira" /></td>
+												</tr>
+												<tr>
+													<th class="info">ひらがな</th>
+													<td><s:property value="nameHira" /></td>
 
-											</tr>
-											<tr>
-												<th class="info">メールアドレス</th>
-												<td><s:property value="phoneEmail" /></td>
+												</tr>
+												<tr>
+													<th class="info">メールアドレス</th>
+													<td><s:property value="phoneEmail" /></td>
 
-											</tr>
-											<tr>
-												<th class="info">郵便番号</th>
-												<td><s:property value="postal" /></td>
-											</tr>
-											<tr>
-												<th class="info">住所</th>
-												<td><s:property value="address1" /><s:property value="address2" /></td>
+												</tr>
+												<tr>
+													<th class="info">郵便番号</th>
+													<td><s:property value="postal" /></td>
+												</tr>
+												<tr>
+													<th class="info">住所</th>
+													<td><s:property value="address1" />
+														<s:property value="address2" /></td>
 
-											</tr>
-											<tr>
-												<th class="info">電話番号</th>
-												<td><s:property value="phoneNumber" /></td>
+												</tr>
+												<tr>
+													<th class="info">電話番号</th>
+													<td><s:property value="phoneNumber" /></td>
 
-											</tr>
+												</tr>
 											</s:iterator>
 										</tbody>
 									</table>
 								</div>
 							</div>
 
-							<div class="tab-pane" id="sampleContentB">
+							<div class="tab-pane <s:if test="type==2">active</s:if>" id="sampleContentB">
 								<div class="table-responsive">
 									<table class="table table-bordered table-hover">
 										<thead>
@@ -108,7 +122,7 @@
 								</div>
 							</div>
 
-							<div class="tab-pane" id="sampleContentC">
+							<div class="tab-pane <s:if test="type==3">active</s:if>" id="sampleContentC">
 								<p>お気に入り商品</p>
 							</div>
 						</div>

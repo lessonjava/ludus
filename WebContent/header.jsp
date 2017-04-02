@@ -63,11 +63,11 @@
 								class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>ようこそ！<s:property value="#session.userList.nameKanji" />さん
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href='<s:url action="MyPageAction"></s:url>'><span
+								<li><a href='<s:url action="MyPageAction"><s:param name="type" value="1"/></s:url>'><span
 										class="glyphicon glyphicon-user" aria-hidden="true"></span>マイページ</a></li>
-								<li><a href=""><span class="glyphicon glyphicon-book"
+								<li><a href='<s:url action="MyPageAction"><s:param name="type" value="2"/></s:url>'><span class="glyphicon glyphicon-book"
 										aria-hidden="true"></span>購入履歴</a></li>
-								<li><a href=""><span class="glyphicon glyphicon-star"
+								<li><a href='<s:url action="MyPageAction"><s:param name="type" value="3"/></s:url>'><span class="glyphicon glyphicon-star"
 										aria-hidden="true"></span>お気に入り</a></li>
 								<li role="separator" class="divider"></li>
 								<li><a href='<s:url action="LoginOutAction"></s:url>'><span
