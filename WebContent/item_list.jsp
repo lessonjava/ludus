@@ -17,7 +17,7 @@
 	<div class="container">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12" style="background: #000;">
+				<div class="col-sm-12" style="background: #fff;">
 					<jsp:include page="header.jsp" /></div>
 			</div>
 

@@ -33,7 +33,7 @@
 		<div class="row">
 
 			<div class="col-xs-12 col-sm-9"
-				style="background: #fff;">
+				style="background: #fff;margin-right: -30px;">
 				<div id="content">
 					<div id="featured_img">
 						<img id="img"
@@ -53,7 +53,7 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-3"
-				style="background: #fff; height: auto; margin: 3rem auto;">
+				style="background: #fff; height: auto; margin: 3rem auto;margin-left: -15px;">
 				<div class="panel panel-default">
 					<div class="panel-heading" style="height: auto;">
 						<h4 style="word-wrap: break-word;">
