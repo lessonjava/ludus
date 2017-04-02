@@ -18,6 +18,8 @@
 <link rel="stylesheet" href="./css/item.css">
 <%--個別jsの読み込み --%>
 <script src="js/item.js"></script>
+<%--共通jsの読み込み --%>
+<script src="./js/main.js"></script>
 </head>
 <body>
 
@@ -31,7 +33,7 @@
 		<div class="row">
 
 			<div class="col-xs-12 col-lg-9"
-				style="background: url(./img/back.jpg);">
+				style="background: #fff;">
 				<div id="content">
 					<div id="featured_img">
 						<img id="img"
@@ -51,7 +53,7 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-lg-3"
-				style="background: url(./img/back.jpg); height: auto; margin: 3rem auto;">
+				style="background: #fff; height: auto; margin: 3rem auto;">
 				<div class="panel panel-default">
 					<div class="panel-heading" style="height: auto;">
 						<h4 style="word-wrap: break-word;">
@@ -59,12 +61,14 @@
 					</div>
 
 					<div class="panel-body bg-success" style="height: auto;">
-						<h4>￥5000円</h4>
-						<p>残り25点</p>
-						<br> <br> <br>
+					<div class="col-xs-12 col-lg-12">
+						<h4>￥5000円</h4></div>
+						<div class="col-xs-12 col-lg-12">
+						<p>残り25点</p><br> <br> <br></div>
+
 						<form class="form-inline">
 							<div class="form-group ">
-								<label>数量:</label> <select class="form-control input-sm">
+								<label class="col-xs-2 col-lg-6 control-label">数量:</label><div class="col-xs-10 col-lg-6"> <select >
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
@@ -75,7 +79,7 @@
 									<option>8</option>
 									<option>9</option>
 									<option>10</option>
-								</select>
+								</select></div>
 							</div>
 							<div class="text-center" style="padding: 30px;">
 								<button type="button" onClick="location.href='cart.jsp'"
