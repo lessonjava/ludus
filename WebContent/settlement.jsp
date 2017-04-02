@@ -21,7 +21,7 @@
 	<div class="container">
 		<%--　ヘッダー --%>
 		<div class="row">
-			<div class="col-xs-12 col-lg-12" style="background: #fff;">
+			<div class="col-xs-12 col-sm-12" style="background: #fff;">
 				<jsp:include page="header.jsp" /></div>
 		</div>
 		<%--ヘッダー --%>
@@ -103,7 +103,7 @@
 
 		<%--フッター(ただの文字　未完成) --%>
 		<div class="row">
-			<div class="col-xs-12 col-lg-12 text-center"
+			<div class="col-xs-12 col-sm-12 text-center"
 				style="background: #fff;">
 				<p id="pageTop"><a href="#">⇧</a></p>
 				<hr class="style-one">

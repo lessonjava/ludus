@@ -21,38 +21,17 @@
 	<div class="container">
 		<%--　ヘッダー --%>
 		<div class="row">
-			<div class="col-xs-12 col-sm-12" style="background: #fff;">
+			<div class="col-xs-12 col-lg-12" style="background: #fff;">
 				<jsp:include page="header.jsp" /></div>
 		</div>
 		<%--ヘッダー --%>
 
-<h1>入力情報の確認</h1>
 
-<h3>クレジットカード情報</h3>
 
-<h3>商品お届け先</h3>
-
-<h3>購入予定の商品</h3>
-
-<h3>商品の合計個数</h3>
-
-<h3>合計支払金額</h3>
-
-<p>円</p>
-<br>
-<br>
-<br>
-<h2><a href=cart.jsp>カートに戻る</a>&emsp;<a href=settlement_complete.jsp>購入確定</a></h2>
-<br>
-
-<br>
-<a href=main_top.jsp>TOPへ戻る</a>
-
-<hr>
 
 		<%--フッター(ただの文字　未完成) --%>
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 text-center"
+			<div class="col-xs-12 col-lg-12 text-center"
 				style="background: #fff;">
 				<p id="pageTop"><a href="#">⇧</a></p>
 				<hr class="style-one">

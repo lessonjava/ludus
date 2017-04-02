@@ -21,14 +21,14 @@
 	<div class="container">
 		<%--　ヘッダー --%>
 		<div class="row">
-			<div class="col-xs-12 col-lg-12" style="background: #fff;">
+			<div class="col-xs-12 col-sm-12" style="background: #fff;">
 				<jsp:include page="header.jsp" /></div>
 		</div>
 		<%--ヘッダー --%>
 
 
 		<div class="row">
-			<div class="col-xs-12 col-lg-8 col-lg-offset-2"
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2"
 				style="background: #fff; height: auto;">
 				<div class="panel panel-default" style="margin: 5rem auto;">
 					<div class="panel-heading text-center">
@@ -40,8 +40,8 @@
 
 						<s:form class="form-horizontal">
 							<div class="form-group">
-								<label class="col-xs-3 col-lg-3 control-label" for="Name">お名前</label>
-								<div class="col-xs-9 col-lg-9">
+								<label class="col-xs-3 col-sm-3 control-label" for="Name">お名前</label>
+								<div class="col-xs-9 col-sm-9">
 									<s:if test="#session.userList != null">
 										<p class="form-control-static">
 											<s:property value="#session.userList.nameKanji" />
@@ -56,8 +56,8 @@
 
 							</div>
 							<div class="form-group">
-								<label class="col-xs-3 col-lg-3 control-label" for="Email">メールアドレス</label>
-								<div class="col-xs-9 col-lg-9">
+								<label class="col-xs-3 col-sm-3 control-label" for="Email">メールアドレス</label>
+								<div class="col-xs-9 col-sm-9">
 									<s:if test="#session.userList != null">
 										<p class="form-control-static">
 											<s:property value="#session.userList.phoneEmail" />
@@ -71,8 +71,8 @@
 							</div>
 
 							<div class="form-group">
-								<label class="col-xs-3 col-lg-3 control-label" for="Select">お問い合わせの種類</label>
-								<div class="col-xs-9 col-lg-9">
+								<label class="col-xs-3 col-sm-3 control-label" for="Select">お問い合わせの種類</label>
+								<div class="col-xs-9 col-sm-9">
 									<select class="form-control" id="Select" nama="genre">
 										<option>商品について</option>
 										<option>返品について</option>
@@ -81,8 +81,8 @@
 								</div>
 							</div>
 							<div class="form-group ">
-								<label class="col-xs-12 col-lg-12 text-center" for="Textarea">お問い合わせ内容</label>
-								<div class="col-xs-12 col-lg-12">
+								<label class="col-xs-12 col-sm-12 text-center" for="Textarea">お問い合わせ内容</label>
+								<div class="col-xs-12 col-sm-12">
 								<textarea class="form-control" id="Textarea" name="contents"
 									placeholder="お問い合わせ内容を入力して下さい。" style="height: 150px;"></textarea>
 							</div></div>
@@ -101,7 +101,7 @@
 
 		<%--フッター(ただの文字　未完成) --%>
 		<div class="row">
-			<div class="col-xs-12 col-lg-12 text-center"
+			<div class="col-xs-12 col-sm-12 text-center"
 				style="background: #fff;">
 				<p id="pageTop">
 					<a href="#">⇧</a>

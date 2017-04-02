@@ -26,13 +26,13 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-lg-12" style="background: #fff;">
+			<div class="col-xs-12 col-sm-12" style="background: #fff;">
 				<jsp:include page="header.jsp" /></div>
 		</div>
 
 		<div class="row">
 
-			<div class="col-xs-12 col-lg-9"
+			<div class="col-xs-12 col-sm-9"
 				style="background: #fff;">
 				<div id="content">
 					<div id="featured_img">
@@ -52,7 +52,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-lg-3"
+			<div class="col-xs-12 col-sm-3"
 				style="background: #fff; height: auto; margin: 3rem auto;">
 				<div class="panel panel-default">
 					<div class="panel-heading" style="height: auto;">
@@ -61,14 +61,14 @@
 					</div>
 
 					<div class="panel-body bg-success" style="height: auto;">
-					<div class="col-xs-12 col-lg-12">
+					<div class="col-xs-12 col-sm-12">
 						<h4>価格:5000円</h4></div>
-						<div class="col-xs-12 col-lg-12">
+						<div class="col-xs-12 col-sm-12">
 						<p>残り25点</p></div>
 
 						<form class="form-inline">
 							<div class="form-group ">
-								<label class="col-xs-2 col-lg-7 control-label" style="padding-right: 0px;">数量:</label><div class="col-xs-10 col-lg-5" style="padding-left: 0px;"> <select >
+								<label class="col-xs-2 col-sm-7 control-label" style="padding-right: 0px;">数量:</label><div class="col-xs-10 col-sm-5" style="padding-left: 0px;"> <select >
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
@@ -83,7 +83,7 @@
 							</div>
 							<div class="text-center" style="padding: 50px 0;">
 								<button type="button" onClick="location.href='cart.jsp'"
-									class="btn btn-primary center-block btn-lg btn-block">カートに入れる</button>
+									class="btn btn-primary center-block btn-sm btn-block">カートに入れる</button>
 							</div>
 						</form>
 
@@ -91,7 +91,7 @@
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-lg-12"
+			<div class="col-xs-12 col-sm-12"
 				style="background: #fff; height: 200px;">
 				<div class="panel panel-info" style="height: 200px;">
 					<div class="panel-heading">
@@ -103,7 +103,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col-xs-12 col-lg-12 text-center"
+			<div class="col-xs-12 col-sm-12 text-center"
 				style="background: #fff;">
 				<p id="pageTop"><a href="#">⇧</a></p>
 				<hr class="style-one">

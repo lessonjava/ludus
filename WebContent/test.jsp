@@ -23,7 +23,7 @@
 	<div class="container" >
 		<%--　ヘッダー --%>
 		<div class="row">
-			<div class="col-xs-12 col-lg-12" style="background: #fff;">
+			<div class="col-xs-12 col-sm-12" style="background: #fff;">
 				<jsp:include page="header.jsp" /><div id="carousel-mainContents"
 					class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
@@ -77,7 +77,7 @@
 
 
 		<div class="row">
-			<div class="col-xs-8 col-lg-8 col-xs-offset-2" style="background: #fff;">
+			<div class="col-xs-8 col-sm-8 col-xs-offset-2" style="background: #fff;">
 				<div class="table-responsive">
 					<table class="table table-hover table-bordered">
 						<tbody>
@@ -114,7 +114,7 @@
 
 		<%--フッター(ただの文字　未完成) --%>
 		<div class="row">
-			<div class="col-xs-12 col-lg-12 text-center"
+			<div class="col-xs-12 col-sm-12 text-center"
 				style="background: #fff;">
 				<hr class="style-one">
 				<h1 style="margin: 3rem auto;">会社概要　　利用規約</h1>

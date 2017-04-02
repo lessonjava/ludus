@@ -21,7 +21,7 @@
 	<div class="container">
 		<%--　ヘッダー --%>
 		<div class="row">
-			<div class="col-xs-12 col-lg-12" style="background: #fff;">
+			<div class="col-xs-12 col-sm-12" style="background: #fff;">
 				<jsp:include page="header.jsp" /><div id="carousel-mainContents"
 					class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
@@ -76,14 +76,14 @@
 
 		<div class="row">
 			<!-- 			<div class="col-sm-2" style="background: #ddd; height: 750px;">サイドバー</div> -->
-			<div class=" col-xs-12 col-lg-12"
+			<div class=" col-xs-12 col-sm-12"
 				style="background: url(./img/back.jpg); height: 750px;">メイン</div>
 		</div>
 
 
 		<%--フッター(ただの文字　未完成) --%>
 		<div class="row">
-			<div class="col-xs-12 col-lg-12 text-center"
+			<div class="col-xs-12 col-sm-12 text-center"
 				style="background: #fff;">
 				<p id="pageTop"><a href="#">⇧</a></p>
 				<hr class="style-one">

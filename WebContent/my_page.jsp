@@ -23,13 +23,13 @@
 	<div class="container">
 		<%--　ヘッダー --%>
 		<div class="row">
-			<div class="col-xs-12 col-lg-12" style="background: #fff;">
+			<div class="col-xs-12 col-sm-12" style="background: #fff;">
 				<jsp:include page="header.jsp" /></div>
 		</div>
 		<%--ヘッダー --%>
 
 		<div class="row">
-			<div class="col-xs-12 col-lg-8 col-lg-offset-2"
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2"
 				style="background: #fff; height: 500px;">
 				<div class="panel panel-default" style="margin: 5rem auto;">
 					<div class="panel-heading">
@@ -136,7 +136,7 @@
 
 		<%--フッター(ただの文字　未完成) --%>
 		<div class="row">
-			<div class="col-xs-12 col-lg-12 text-center"
+			<div class="col-xs-12 col-sm-12 text-center"
 				style="background: #fff;">
 				<p id="pageTop">
 					<a href="#">⇧</a>
