@@ -62,13 +62,13 @@
 
 					<div class="panel-body bg-success" style="height: auto;">
 					<div class="col-xs-12 col-lg-12">
-						<h4>￥5000円</h4></div>
+						<h4>価格:5000円</h4></div>
 						<div class="col-xs-12 col-lg-12">
-						<p>残り25点</p><br> <br> <br></div>
+						<p>残り25点</p></div>
 
 						<form class="form-inline">
 							<div class="form-group ">
-								<label class="col-xs-2 col-lg-6 control-label">数量:</label><div class="col-xs-10 col-lg-6"> <select >
+								<label class="col-xs-2 col-lg-7 control-label" style="padding-right: 0px;">数量:</label><div class="col-xs-10 col-lg-5" style="padding-left: 0px;"> <select >
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
@@ -81,7 +81,7 @@
 									<option>10</option>
 								</select></div>
 							</div>
-							<div class="text-center" style="padding: 30px;">
+							<div class="text-center" style="padding: 50px 0;">
 								<button type="button" onClick="location.href='cart.jsp'"
 									class="btn btn-primary center-block btn-lg btn-block">カートに入れる</button>
 							</div>
