@@ -38,18 +38,18 @@
 
 								<li <s:if test="type==1">class="active"</s:if>><a href="#sampleContentA"
 									data-toggle="tab"><span class="glyphicon glyphicon-user"
-										aria-hidden="true"></span>登録情報</a></li>
+										aria-hidden="true"></span> 登録情報</a></li>
 
 
 								<li <s:if test="type==2">class="active"</s:if>><a href="#sampleContentB"
 									data-toggle="tab"><span class="glyphicon glyphicon-book"
-										aria-hidden="true"></span>購入履歴</a></li>
+										aria-hidden="true"></span> 購入履歴</a></li>
 
 
 
 								<li <s:if test="type==3">class="active"</s:if>><a href="#sampleContentC"
 									data-toggle="tab"><span class="glyphicon glyphicon-star"
-										aria-hidden="true"></span>お気に入り</a></li>
+										aria-hidden="true"></span> お気に入り</a></li>
 
 
 						</ul>

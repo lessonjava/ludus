@@ -73,40 +73,49 @@
 		</div>
 		<%--ヘッダー --%>
 
-<div class="text-center">
- <h3>新着情報</h3><br>
-  <div class="row">
-    <div class="col-xs-6 col-sm-4">
-      <img src="./img/macaron01.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <p>マカロン</p>
-    </div>
-    <div class="col-xs-6 col-sm-4">
-      <img src="./img/Brownie.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <p>クッキー</p>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="well">
-       <p>お知らせとかなんか</p>
-       <p>お知らせとかなんか</p>
-       <p>お知らせとかなんか</p>
-       <p>お知らせとかなんか</p>
-       <p>お知らせとかなんか</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+		<div class="text-center">
+			<h3>
+				<span class="label label-danger">新着情報</span>
+			</h3>
+			<br>
+			<div class="row">
+				<div class="col-xs-6 col-sm-4">
+					<img src="./img/macaron01.jpg" class="img-responsive"
+						style="width: 100%" alt="Image">
+					<p>マカロン</p>
+				</div>
+				<div class="col-xs-6 col-sm-4">
+					<img src="./img/Brownie.jpg" class="img-responsive"
+						style="width: 100%" alt="Image">
+					<p>ブラウニー</p>
+				</div>
 
-		<%--フッター(ただの文字　未完成) --%>
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 text-center"
-				style="background: #fff;">
-				<p id="pageTop"><a href="#">⇧</a></p>
-				<hr class="style-one">
-				<h1 style="margin: 3rem auto;">会社概要 利用規約</h1>
+				<div class="col-xs-12 col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title text-left">
+								<span class="label label-default">お知らせ</span>
+							</h4>
+						</div>
+						<div class="panel-body">逆巻く風邪 波動拳 昇竜拳 竜巻旋風脚 真空波動拳</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
-		<%--フッター --%>
+	</div>
+
+	<%--フッター(ただの文字　未完成) --%>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 text-center" style="background: #fff;">
+			<p id="pageTop">
+				<a href="#">⇧</a>
+			</p>
+			<hr class="style-one">
+			<h1 style="margin: 3rem auto;">会社概要 利用規約</h1>
+		</div>
+	</div>
+	<%--フッター --%>
 	</div>
 
 </body>
