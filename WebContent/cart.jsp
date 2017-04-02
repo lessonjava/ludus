@@ -66,7 +66,7 @@
 <br>
 <br>
 <br>
-<a href=main_top.jsp>TOPへ戻る</a>
+
 </div>
 <hr>
 

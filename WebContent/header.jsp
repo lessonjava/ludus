@@ -44,9 +44,9 @@
 						aria-expanded="false"><span class="glyphicon glyphicon-gift"
 							aria-hidden="true"></span>商品<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="">アクション</a></li>
-							<li><a href="">RPG</a></li>
-							<li><a href="">シュミレーション</a></li>
+							<li><a href="item_list.jsp">あんぱん</a></li>
+							<li><a href="">しょくぱん</a></li>
+							<li><a href="">カレーパン</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="">Separated link</a></li>
 							<li role="separator" class="divider"></li>
