@@ -13,16 +13,14 @@ import lessonjava.ludus.dto.UsersDTO;
 public class MyPageAction extends ActionSupport implements SessionAware {
 	private int userId;
 	private int type;
-	private UsersDTO dto =new UsersDTO();
 	private ArrayList<UsersDTO> userList = new ArrayList<>();
 	private Map<String, Object> session;
 
 	public String execute() {
-		System.out.println(type);
 		String result = ERROR;
 		if (session.get("userList") != null) {
-			this.dto =  (UsersDTO) session.get("userList");
-			SelectUsersDAO dao = new SelectUsersDAO(dto.getUserID());
+			this.userId =  ((UsersDTO) session.get("userList")).getUserID();
+			SelectUsersDAO dao = new SelectUsersDAO(userId);
 			userList = dao.select();
 			if (userList.size() != 0) {
 				result = SUCCESS;
