@@ -73,13 +73,29 @@
 		</div>
 		<%--ヘッダー --%>
 
-
-		<div class="row">
-			<!-- 			<div class="col-sm-2" style="background: #ddd; height: 750px;">サイドバー</div> -->
-			<div class=" col-xs-12 col-sm-12"
-				style="background: url(./img/back.jpg); height: 750px;">メイン</div>
-		</div>
-
+<div class="text-center">
+ <h3>新着情報</h3><br>
+  <div class="row">
+    <div class="col-xs-6 col-sm-4">
+      <img src="./img/macaron01.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>マカロン</p>
+    </div>
+    <div class="col-xs-6 col-sm-4">
+      <img src="./img/Brownie.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>クッキー</p>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="well">
+       <p>お知らせとかなんか</p>
+       <p>お知らせとかなんか</p>
+       <p>お知らせとかなんか</p>
+       <p>お知らせとかなんか</p>
+       <p>お知らせとかなんか</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 		<%--フッター(ただの文字　未完成) --%>
 		<div class="row">
