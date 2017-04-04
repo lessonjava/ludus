@@ -38,5 +38,21 @@
 			<result name="success">my_page.jsp</result>
 			<result name="error"></result>
 		</action>
+
+
+				<!-- 商品一覧画面への遷移 -->
+		<action name="GoItemListAction" class="lessonjava.ludus.action.GoItemListAction"
+			 method="execute">
+			<result name="success">item_list.jsp</result>
+			<result name="error">item_list.jsp</result>
+		</action>
+
+
+
+
+
+
+
+
 	</package>
 </struts>
