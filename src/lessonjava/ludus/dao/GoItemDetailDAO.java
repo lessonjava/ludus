@@ -9,8 +9,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import com.internousdev.util.DBConnector;
+
 import lessonjava.ludus.dto.ItemDTO;
-import lessonjava.ludus.util.DBConnector;
+
 
 
 /**

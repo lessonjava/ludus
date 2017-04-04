@@ -6,8 +6,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import com.internousdev.util.DBConnector;
+
 import lessonjava.ludus.dto.UsersDTO;
-import lessonjava.ludus.util.DBConnector;
+
+
 
 public class SelectUsersDAO {
 	private int userId;
@@ -43,8 +46,8 @@ public class SelectUsersDAO {
 	}
 
 	public ArrayList<UsersDTO> select() {
-		DBConnector db = new DBConnector();
-		try (Connection con = db.getConnection("ludus");
+		DBConnector db = new DBConnector("ludus");
+		try (Connection con = db.getConnection();
 				PreparedStatement ps = createPreparedStatement(con);
 				ResultSet rs = ps.executeQuery()) {
 			while (rs.next()) {

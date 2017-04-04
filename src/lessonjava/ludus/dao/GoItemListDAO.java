@@ -9,8 +9,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import com.internousdev.util.DBConnector;
+
 import lessonjava.ludus.dto.ItemDTO;
-import lessonjava.ludus.util.DBConnector;
+
 
 /**
  * 商品を一覧表示するためのクラス
@@ -42,7 +44,7 @@ public class GoItemListDAO {
 	 */
 	public ArrayList<ItemDTO> select(String itemGenre)
 	{
-		DBConnector db  = new  DBConnector("cetus");
+		DBConnector db  = new  DBConnector("ludus");
 		Connection con = db.getConnection();
 		String sql;
 			sql = "SELECT * FROM item WHERE item_genre = ?";
