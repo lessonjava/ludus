@@ -25,7 +25,18 @@
 				<div class="col-sm-2" style="background: #ddd; height: 750px;">サイドバー</div>
 				<div class="col-sm-10" style="background: #ccc; height: 750px;">
 					<div class="row">
-						<div class="col-sm-12" style="background: #023; height: 750px;">商品画像
+						<div class="col-sm-12" style="background: #023; height: 750px;">
+						<h3>${itemGenre}</h3>
+
+    <s:iterator value="displayList" >
+       <div class="col-xs-12 col-sm-3">
+            <a href="<s:url action="GoItemDetailAction"><s:param name="id" value="%{itemId}"/></s:url>">
+                  <img src="img/Product/<s:property value="itemImg01"/>" height="200"/></a>
+            <s:property value="itemName"/>
+            <fmt:formatNumber value="${price}" />
+      </div>
+    </s:iterator>
+
 
 <h3><a href=item_detail.jsp>商品詳細へ</a></h3>
 
