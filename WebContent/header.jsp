@@ -44,11 +44,9 @@
 						aria-expanded="false"><span class="glyphicon glyphicon-gift"
 							aria-hidden="true"></span> 商品<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a
-								href='<s:url action="GoItemListAction">
-								<s:param name="itemGenre">あんパン</s:param></s:url>'>あんパン</a></li>
-							<li><a href="">食パン</a></li>
-							<li><a href="">カレーパン</a></li>
+	<li><a href='<s:url action="GoItemListAction"><s:param name="itemGenre">あんパン</s:param></s:url>'>あんパン</a></li>
+	<li><a href='<s:url action="GoItemListAction"><s:param name="itemGenre">食パン</s:param></s:url>'>食パン</a></li>
+	<li><a href='<s:url action="GoItemListAction"><s:param name="itemGenre">カレーパン</s:param></s:url>'>カレーパン</a></li>
 							<li><a href="">ブラウニー</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="">One more separated link</a></li>
