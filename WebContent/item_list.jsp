@@ -41,17 +41,14 @@
 							<hr>
 						</div>
 
-						<s:iterator value="displayList">
-							<div class="col-xs-12 col-sm-2">
-								<a
-									href="<s:url action="GoItemDetailAction"><s:param name="id" value="%{itemId}"/></s:url>">
-									<img src="img/Product/<s:property value="itemImg01"/>"
-									height="200" />
-								</a>
-								<s:property value="itemName" />
-								<fmt:formatNumber value="${price}" />
-							</div>
-						</s:iterator>
+	<s:iterator value="displayList">
+		<div class="col-xs-12 col-sm-4">
+			<a href="<s:url action="GoItemDetailAction"><s:param name="id" value="%{itemId}"/></s:url>">
+									<img src="img/Product/<s:property value="itemImg01"/>" height="200" /></a>
+			<p><s:property value="itemName" /></p>
+			<p><fmt:formatNumber value="${price}" /></p>
+		</div>
+	</s:iterator>
 
 
 						<h3>

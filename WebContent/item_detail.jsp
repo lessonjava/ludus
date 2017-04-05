@@ -63,7 +63,7 @@
 
 					<div class="panel-body bg-success" style="height: auto;">
 					<div class="col-xs-12 col-sm-12">
-						<h4>価格:5000円</h4></div>
+						<h4><fmt:formatNumber value="${price}" />円</h4></div>
 						<div class="col-xs-12 col-sm-12">
 						<p>残り25点</p></div>
 
@@ -98,9 +98,15 @@
 					<div class="panel-heading">
 						<h3>商品の説明</h3>
 					</div>
-					<div class="panel-body">パネル内容</div>
+					<div class="panel-body">
+
+					<p><s:property value="itemCatch" /><br>
+					<s:property value="itemDetail" /></p>
+
+					</div>
 				</div>
-			</div></s:iterator>
+			</div>
+</s:iterator>
 		</div>
 
 		<div class="row">
