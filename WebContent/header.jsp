@@ -46,8 +46,8 @@
 						<ul class="dropdown-menu">
 							<li><a
 								href='<s:url action="GoItemListAction">
-								<s:param name="itemGenre">パン</s:param></s:url>'>パン</a></li>
-							<li><a href="">しょくぱん</a></li>
+								<s:param name="itemGenre">あんパン</s:param></s:url>'>あんパン</a></li>
+							<li><a href="">食パン</a></li>
 							<li><a href="">カレーパン</a></li>
 							<li><a href="">ブラウニー</a></li>
 							<li role="separator" class="divider"></li>
