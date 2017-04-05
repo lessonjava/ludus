@@ -59,8 +59,6 @@ public  class GoItemListAction extends ActionSupport {
 	 * @return result
 	 */
 	public String execute() {
-		System.out.println(itemGenre);
-		System.out.println(123);
 		String result = ERROR;
 
 		GoItemListDAO dao = new GoItemListDAO();

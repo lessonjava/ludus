@@ -30,25 +30,26 @@
 				<jsp:include page="header.jsp" /></div>
 		</div>
 
-		<div class="row">
+		<div class="row"><s:iterator  value="itemList">
 
 			<div class="col-xs-12 col-sm-9"
 				style="background: #fff;margin-right: -30px;">
 				<div id="content">
+
 					<div id="featured_img">
 						<img id="img"
-							src="//www.imamura.biz/blog/wp-content/uploads/image01.png">
+							src="./img/Product/<s:property value="itemImg01"/>">
 					</div>
 					<div id="thumb_img" class="cf">
 						<img class="active"
 							src="//www.imamura.biz/blog/wp-content/uploads/image01_thumb.png"
-							onclick="changeimg('//www.imamura.biz/blog/wp-content/uploads/image01.png',this);">
+							onclick="changeimg('./img/Product/<s:property value="itemImg01"/>',this);">
 						<img
 							src="//www.imamura.biz/blog/wp-content/uploads/image02_thumb.png"
-							onclick="changeimg('//www.imamura.biz/blog/wp-content/uploads/image02.png',this);">
+							onclick="changeimg('./img/Product/<s:property value="itemImg02"/>',this);">
 						<img
 							src="//www.imamura.biz/blog/wp-content/uploads/image03_thumb.png"
-							onclick="changeimg('//www.imamura.biz/blog/wp-content/uploads/image03.png',this);">
+							onclick="changeimg('./img/Product/<s:property value="itemImg03"/>',this);">
 					</div>
 				</div>
 			</div>
@@ -57,7 +58,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading" style="height: auto;">
 						<h4 style="word-wrap: break-word;">
-							商品名ssergggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</h4>
+							<s:property value="itemName"/></h4>
 					</div>
 
 					<div class="panel-body bg-success" style="height: auto;">
@@ -99,7 +100,7 @@
 					</div>
 					<div class="panel-body">パネル内容</div>
 				</div>
-			</div>
+			</div></s:iterator>
 		</div>
 
 		<div class="row">
