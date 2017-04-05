@@ -44,7 +44,9 @@
 						aria-expanded="false"><span class="glyphicon glyphicon-gift"
 							aria-hidden="true"></span> 商品<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="item_list.jsp">あんぱん</a></li>
+							<li><a
+								href='<s:url action="GoItemListAction">
+								<s:param name="itemGenre">パン</s:param></s:url>'>パン</a></li>
 							<li><a href="">しょくぱん</a></li>
 							<li><a href="">カレーパン</a></li>
 							<li><a href="">ブラウニー</a></li>
@@ -52,7 +54,8 @@
 							<li><a href="">One more separated link</a></li>
 						</ul></li>
 					<li><a href="inquiry.jsp"><span
-							class="glyphicon glyphicon-envelope" aria-hidden="true"></span> お問い合わせ</a></li>
+							class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+							お問い合わせ</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -65,7 +68,8 @@
 							<ul class="dropdown-menu">
 								<li><a
 									href='<s:url action="MyPageAction"><s:param name="type" value="1"/></s:url>'><span
-										class="glyphicon glyphicon-user" aria-hidden="true"></span> マイページ</a></li>
+										class="glyphicon glyphicon-user" aria-hidden="true"></span>
+										マイページ</a></li>
 								<li><a
 									href='<s:url action="MyPageAction"><s:param name="type" value="2"/></s:url>'><span
 										class="glyphicon glyphicon-book" aria-hidden="true"></span>
@@ -85,10 +89,12 @@
 								class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
 								ログイン</a></li>
 						<li><a href="sign_up.jsp"><span
-								class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> 新規登録</a></li>
+								class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+								新規登録</a></li>
 					</s:else>
 					<li><a href=""><span
-							class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> カート</a></li>
+							class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+							カート</a></li>
 				</ul>
 				<form class="navbar-form navbar-right" style="padding: 15px 0;">
 					<div class="form-group">
