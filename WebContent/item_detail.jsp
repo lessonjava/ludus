@@ -37,18 +37,18 @@
 				<div id="content">
 
 					<div id="featured_img">
-						<img id="img"
+						<img id="img"  style="height:250px; width:400px; min-height:100px; min-width:150px;"
 							src="./img/Product/<s:property value="itemImg01"/>">
 					</div>
 					<div id="thumb_img" class="cf">
 						<img class="active"
-							src="//www.imamura.biz/blog/wp-content/uploads/image01_thumb.png"
+							src="./img/Product/<s:property value="itemImg01"/>" width="142"
 							onclick="changeimg('./img/Product/<s:property value="itemImg01"/>',this);">
 						<img
-							src="//www.imamura.biz/blog/wp-content/uploads/image02_thumb.png"
+							src="./img/Product/<s:property value="itemImg02"/>" width="142"
 							onclick="changeimg('./img/Product/<s:property value="itemImg02"/>',this);">
 						<img
-							src="//www.imamura.biz/blog/wp-content/uploads/image03_thumb.png"
+							src="./img/Product/<s:property value="itemImg03"/>" width="142"
 							onclick="changeimg('./img/Product/<s:property value="itemImg03"/>',this);">
 					</div>
 				</div>
