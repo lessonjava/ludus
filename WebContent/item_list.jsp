@@ -41,22 +41,23 @@
 							<hr>
 						</div>
 
-	<s:iterator value="displayList">
-		<div class="col-xs-12 col-sm-4">
-			<a href="<s:url action="GoItemDetailAction"><s:param name="id" value="%{itemId}"/></s:url>">
-									<img src="img/Product/<s:property value="itemImg01"/>" height="200" /></a>
-			<p><s:property value="itemName" /></p>
-			<p><fmt:formatNumber value="${price}" /></p>
-		</div>
-	</s:iterator>
-
-
-						<h3>
-							<a href=item_detail.jsp>商品詳細へ</a>
-						</h3>
+						<s:iterator value="displayList">
+							<div class="col-xs-12 col-sm-4">
+								<a
+									href="<s:url action="GoItemDetailAction"><s:param name="id" value="%{itemId}"/></s:url>">
+									<img src="img/Product/<s:property value="itemImg01"/>" class="img-responsive"
+									style="height:230px; width:280px; min-height:150px; " />
+								</a>
+								<p>
+									<s:property value="itemName" />
+								</p>
+								<p>
+									<fmt:formatNumber value="${price}" />
+								</p>
+							</div>
+						</s:iterator>
 					</div>
 				</div>
-				<!-- 				<div class="col-sm-4" style="background: #723; height: 750px;">カート入れる</div> -->
 			</div>
 		</div>
 
