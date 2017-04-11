@@ -17,6 +17,7 @@
 
 <%--共通jsの読み込み --%>
 <script src="./js/main.js"></script>
+<script src="js/cart.js"></script>
 <title>カート</title>
 </head>
 <body>
@@ -27,60 +28,109 @@
 				<jsp:include page="header.jsp" /></div>
 		</div>
 		<%--ヘッダー --%>
-<div id="item">
-<h1>カート画面</h1>
 
-<table align="center" >
-<tr>
-<td >
-<img src="img/item_sample1.jpg"  width="200px" height="150px"/>
-</td>
-<td >
-<p>サンダーソウルスリム 攻めタチウオ</p>
-</td>
-<td >
-<form>
-<p>
-数量：<select name="suu">
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-</select>
-</p>
-<input type="submit" value="削除">
-</form>
+		<div class="row">
 
-</td>
-<td>
-￥36,800
-</td>
-</tr>
-</table>
-<br>
-<h2><a href=settlement.jsp>購入する</a></h2>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+			<s:if test="msg.size()>0">
+				<div class="col-xs-12">
+					<div class="panel panel-warning">
+						<div class="panel-heading">お知らせ</div>
+						<div class="panel-body">
+							<s:iterator value="msg">・商品名 「<s:property />」 は在庫0になったためカートから削除されました。<br>
+							</s:iterator>
+						</div>
+					</div>
+				</div>
+			</s:if>
+			<div class="col-xs-12">
+				<h1>カート画面</h1>
+			</div>
 
-</div>
-<hr>
+			<div class="col-xs-12 col-sm-9">
+				<s:iterator value="cartList">
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover table-condensed ">
+							<thead>
+								<tr class="info">
+									<th>商品画像</th>
+									<th>商品名</th>
+									<th>価格</th>
+									<th class="text-right">数量</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td
+										style="height: 90px; width: 150px; min-height: 90px; min-width: 150px;"><img
+										src="./img/Product/<s:property value="itemImg01"/>"
+										class="img-responsive" alt=""
+										style="height: 113px; width: 150px; min-height: 113px; min-width: 150px;"></td>
+									<td><s:property value="itemName" /><br> <br> <br>
+										<br> <s:form action="CartDeleteAction">
+											<s:hidden name="userId" value="%{userId}" />
+											<s:hidden name="itemId" value="%{itemId}" />
+											<button type="submit" class="btn btn-default">削除</button>
+										</s:form>
+									<td style="height: 100px; width: 120px;"><fmt:formatNumber
+											value="${subtotal}" />円</td>
+									<td style="height: 100px; width: 120px;">
+
+										<div class="form-inline form-group center-block">
+											<s:form action="CartInsertAction">
+												<s:hidden name="itemId" value="%{itemId}" />
+												<input type="button" class="btn btn-default" value="-"
+													onclick="minus('${itemId}')" />
+												<div class="form-group">
+													<input name="orderNumber"
+														style="height: 30px; width: 30px; padding: 5px;"
+														id="${itemId}" type="text" class="form-control"
+														value="${orderCount}" maxlength="2" pattern="[0-9]*" />
+												</div>
+												<input type="button" class="btn btn-default " value="+"
+													onclick="plus('${itemId}')" />
+												<button type="submit" class="btn btn-primary center-block">更新する</button>
+											</s:form>
+										</div>
+
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</s:iterator>
+			</div>
+
+			<div class="col-xs-12 col-sm-3">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3>
+							小計(${order}点): ￥
+							<fmt:formatNumber value="${payment}" />
+						</h3>
+					</div>
+
+					<div class="panel-body">
+						<s:form action="GoSettlementAction">
+							<button type="submit" class="btn btn-primary center-block">購入する</button>
+						</s:form>
+
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<%--フッター(ただの文字　未完成) --%>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 text-center"
 				style="background: #fff;">
-				<p id="pageTop"><a href="#">⇧</a></p>
+				<p id="pageTop">
+					<a href="#">⇧</a>
+				</p>
 				<hr class="style-one">
 				<h1 style="margin: 3rem auto;">会社概要 利用規約</h1>
 			</div>
 		</div>
 		<%--フッター --%>
-</div>
-
+	</div>
 </body>
 </html>

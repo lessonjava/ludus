@@ -16,7 +16,8 @@ public class LoginOutAction extends ActionSupport implements SessionAware {
 		String result = ERROR;
 		if (session.get("userList") != null) {
 			dto = (UsersDTO) session.get("userList");
-			session.remove("userList");
+//			session.remove("userList");
+			session.clear();
 			result = SUCCESS;
 		}
 

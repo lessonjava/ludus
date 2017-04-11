@@ -54,6 +54,21 @@
 			<result name="error">item_detail.jsp</result>
 		</action>
 
+        <!-- カート画面への遷移 -->
+		<action name="CartInsertAction" class="lessonjava.ludus.action.CartInsertAction"
+			method="execute">
+			<result name="success">cart.jsp</result>
+			<result name="error">cart.jsp</result>
+		</action>
+
+		<!-- カート画面の商品削除 -->
+		<action name="CartDeleteAction" class="lessonjava.ludus.action.CartDeleteAction"
+			method="execute">
+			<result name="success">cart.jsp</result>
+			<result name="error">cart.jsp</result>
+		</action>
+
+
 
 
 

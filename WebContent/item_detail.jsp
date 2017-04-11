@@ -25,97 +25,100 @@
 
 
 	<div class="container">
-	　 <%--　ヘッダー --%>
+		<%--　ヘッダー --%>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12" style="background: #fff;">
 				<jsp:include page="header.jsp" /></div>
 		</div>
-        <%--ヘッダー --%>
+		<%--ヘッダー --%>
 
-		<div class="row"><s:iterator  value="itemList">
+		<div class="row">
+			<s:iterator value="itemList">
 
-			<div class="col-xs-12 col-sm-9"
-				style="background: #fff;margin-right: -30px;">
-				<div id="content">
+				<div class="col-xs-12 col-sm-9"
+					style="background: #fff; margin-right: -30px;">
+					<div id="content">
 
-					<div id="featured_img">
-						<img id="img"  style="height:250px; width:400px; min-height:100px; min-width:150px;"
-							src="./img/Product/<s:property value="itemImg01"/>">
-					</div>
-					<div id="thumb_img" class="cf">
-						<img class="active"
-							src="./img/Product/<s:property value="itemImg01"/>" width="142"
-							onclick="changeimg('./img/Product/<s:property value="itemImg01"/>',this);">
-						<img
-							src="./img/Product/<s:property value="itemImg02"/>" width="142"
-							onclick="changeimg('./img/Product/<s:property value="itemImg02"/>',this);">
-						<img
-							src="./img/Product/<s:property value="itemImg03"/>" width="142"
-							onclick="changeimg('./img/Product/<s:property value="itemImg03"/>',this);">
+						<div id="featured_img">
+							<img id="img"
+								style="height: 250px; width: 400px; min-height: 100px; min-width: 150px;"
+								src="./img/Product/<s:property value="itemImg01"/>">
+						</div>
+						<div id="thumb_img" class="cf">
+							<img class="active"
+								src="./img/Product/<s:property value="itemImg01"/>" width="142"
+								onclick="changeimg('./img/Product/<s:property value="itemImg01"/>',this);">
+							<img src="./img/Product/<s:property value="itemImg02"/>"
+								width="142"
+								onclick="changeimg('./img/Product/<s:property value="itemImg02"/>',this);">
+							<img src="./img/Product/<s:property value="itemImg03"/>"
+								width="142"
+								onclick="changeimg('./img/Product/<s:property value="itemImg03"/>',this);">
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-xs-12 col-sm-3"
-				style="background: #fff; height: auto; margin: 3rem auto;margin-left: -15px;">
-				<div class="panel panel-default">
-					<div class="panel-heading" style="height: auto;">
-						<h4 style="word-wrap: break-word;">
-							<s:property value="itemName"/></h4>
-					</div>
 
-					<div class="panel-body bg-success" style="height: auto;">
-					<div class="col-xs-12 col-sm-12">
-						<h4><fmt:formatNumber value="${price}" />円</h4></div>
-						<div class="col-xs-12 col-sm-12">
-						<p>残り25点</p></div>
+				<div class="col-xs-12 col-sm-3"
+					style="background: #fff; height: auto; margin: 3rem auto; margin-left: -15px;">
+					<div class="panel panel-default">
+						<div class="panel-heading" style="height: auto;">
+							<h4 style="word-wrap: break-word;">
+								<s:property value="itemName" />
+							</h4>
+						</div>
 
-						<form class="form-inline">
-							<div class="form-group ">
-								<label class="col-xs-2 col-sm-7 control-label" style="padding-right: 0px;">数量:</label><div class="col-xs-10 col-sm-5" style="padding-left: 0px;"> <select >
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-									<option>6</option>
-									<option>7</option>
-									<option>8</option>
-									<option>9</option>
-									<option>10</option>
-								</select></div>
+						<div class="panel-body bg-success" style="height: auto;">
+							<div class="col-xs-12 col-sm-12">
+								<h4>
+									<fmt:formatNumber value="${price}" />
+									円
+								</h4>
 							</div>
-							<div class="text-center" style="padding: 50px 0;">
-								<button type="button" onClick="location.href='cart.jsp'"
-									class="btn btn-primary center-block btn-sm btn-block">カートに入れる</button>
+							<div class="col-xs-12 col-sm-12">
+								<p>残り25点</p>
 							</div>
-						</form>
 
+							<s:form action="CartInsertAction">
+								<s:hidden name="itemId" value="%{itemId}" />
+								<s:hidden name="orderNumber" value="1" />
+								<s:hidden name="detail" value="true" />
+								<div class="text-center" style="padding: 50px 0 0 0;">
+									<button type="submit" <s:if test="stock<=0">disabled</s:if>
+										class="btn btn-primary center-block btn-lg btn-block">カートに入れる</button>
+								</div>
+							</s:form>
+
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="col-xs-12 col-sm-12"
-				style="background: #fff; height: 200px;">
-				<div class="panel panel-info" style="height: 200px;">
-					<div class="panel-heading">
-						<h3>商品の説明</h3>
-					</div>
-					<div class="panel-body">
+				<div class="col-xs-12 col-sm-12"
+					style="background: #fff; height: 200px;">
+					<div class="panel panel-info" style="height: 200px;">
+						<div class="panel-heading">
+							<h3>商品の説明</h3>
+						</div>
+						<div class="panel-body">
 
-					<p><s:property value="itemCatch" /><br>
-					<s:property value="itemDetail" /></p>
+							<p>
+								<s:property value="itemCatch" />
+								<br>
+								<s:property value="itemDetail" />
+							</p>
 
+						</div>
 					</div>
 				</div>
-			</div>
-</s:iterator>
+			</s:iterator>
 		</div>
 
-        <%--フッター(ただの文字　未完成) --%>
+		<%--フッター(ただの文字　未完成) --%>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 text-center"
 				style="background: #fff;">
-				<p id="pageTop"><a href="#">⇧</a></p>
+				<p id="pageTop">
+					<a href="#">⇧</a>
+				</p>
 				<hr class="style-one">
 				<h1 style="margin: 3rem auto;">会社概要 利用規約</h1>
 			</div>
