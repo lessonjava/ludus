@@ -48,7 +48,10 @@ create table users (
 create table cart(
 	user_id int not null,
 	item_id int not null,
+	item_name varchar(100) not null,
 	order_count int not null,
+	subtotal decimal not null,
+	item_img01 varchar(255) not null default 'img/Product/0default.jpg',
 	delete_flg boolean default FALSE,
 	registration_date datetime not null default current_timestamp,
 	updated_date datetime not null default current_timestamp,
