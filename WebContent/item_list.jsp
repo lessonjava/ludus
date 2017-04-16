@@ -30,7 +30,17 @@
 
 
 		<div class="row">
-			<div class="col-sm-2" style="background: #ddd; height: 750px;">サイドバー</div>
+			<div class="col-sm-2" style="background: #ddd; height: 750px;">
+			<h4>商品カデゴリー</h4>
+			<p><b>・おすすめ</b></p>
+			<p><b>・新商品</b></p>
+			<s:iterator value="genreList">
+			<p>
+			<a
+								href='<s:url action="GoItemListAction"><s:param name="itemGenre" value="%{itemGenre}"></s:param></s:url>'><b>・<s:property value="%{itemGenre}"/></b></a>
+			</p></s:iterator>
+
+			</div>
 			<div class="col-sm-10" style="background: #ccc; height: 750px;">
 
 				<div class="row">

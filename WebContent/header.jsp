@@ -39,21 +39,12 @@
 				<ul class="nav navbar-nav">
 					<li><a href="main_top.jsp"><span
 							class="glyphicon glyphicon-home" aria-hidden="true"></span> HOME</a></li>
-					<li class="dropdown"><a href="" class="dropdown-toggle"
-						data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false"><span class="glyphicon glyphicon-gift"
-							aria-hidden="true"></span> 商品<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a
-								href='<s:url action="GoItemListAction"><s:param name="itemGenre">あんパン</s:param></s:url>'>あんパン</a></li>
-							<li><a
-								href='<s:url action="GoItemListAction"><s:param name="itemGenre">食パン</s:param></s:url>'>食パン</a></li>
-							<li><a
-								href='<s:url action="GoItemListAction"><s:param name="itemGenre">カレーパン</s:param></s:url>'>カレーパン</a></li>
-							<li><a href="">ブラウニー</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="">One more separated link</a></li>
-						</ul></li>
+								<li><a
+									href='<s:url action="GenreAciton"></s:url>'>
+										<span class="glyphicon glyphicon-gift"
+							aria-hidden="true"></span> 商品</a></li>
+
+
 					<li><a href="inquiry.jsp"><span
 							class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
 							お問い合わせ</a></li>
@@ -80,7 +71,7 @@
 										class="glyphicon glyphicon-star" aria-hidden="true"></span>
 										お気に入り</a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href='<s:url action="LoginOutAction"></s:url>'><span
+								<li><a href='<s:url action="LogOutAction"></s:url>'><span
 										class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
 										ログアウト</a></li>
 							</ul></li>

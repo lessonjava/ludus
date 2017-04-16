@@ -13,7 +13,6 @@ public class GenreDTO {
 	 * */
 	private int genreId;
 
-
 	/**
 	 * ジャンル名
 	 */

@@ -38,12 +38,13 @@
 					</div>
 					<div class="panel-body">
 
-						<s:form class="form-horizontal">
+						<s:form class="form-horizontal" action="InquiryAction">
 							<div class="form-group">
 								<label class="col-xs-3 col-sm-3 control-label" for="Name">お名前</label>
 								<div class="col-xs-9 col-sm-9">
 									<s:if test="#session.userList != null">
 										<p class="form-control-static">
+											<s:hidden name="name" value="%{#session.userList.nameKanji}" />
 											<s:property value="#session.userList.nameKanji" />
 										</p>
 									</s:if>
@@ -60,6 +61,8 @@
 								<div class="col-xs-9 col-sm-9">
 									<s:if test="#session.userList != null">
 										<p class="form-control-static">
+											<s:hidden name="email"
+												value="%{#session.userList.phoneEmail}" />
 											<s:property value="#session.userList.phoneEmail" />
 										</p>
 									</s:if>
@@ -73,23 +76,22 @@
 							<div class="form-group">
 								<label class="col-xs-3 col-sm-3 control-label" for="Select">お問い合わせの種類</label>
 								<div class="col-xs-9 col-sm-9">
-									<select class="form-control" id="Select" nama="genre">
-										<option>商品について</option>
-										<option>返品について</option>
-										<option>その他</option>
+									<select class="form-control" id="Select" name="genre">
+										<option value="1">商品について</option>
+										<option value="2">返品について</option>
+										<option value="3">その他</option>
 									</select>
 								</div>
 							</div>
 							<div class="form-group ">
 								<label class="col-xs-12 col-sm-12 text-center" for="Textarea">お問い合わせ内容</label>
 								<div class="col-xs-12 col-sm-12">
-								<textarea class="form-control" id="Textarea" name="contents"
-									placeholder="お問い合わせ内容を入力して下さい。" style="height: 150px;"></textarea>
-							</div></div>
-
+									<textarea class="form-control" id="Textarea" name="contents"
+										placeholder="お問い合わせ内容を入力して下さい。" style="height: 150px;"></textarea>
+								</div>
+							</div>
 
 							<button type="submit" class="btn btn-primary center-block">送信</button>
-
 						</s:form>
 
 					</div>

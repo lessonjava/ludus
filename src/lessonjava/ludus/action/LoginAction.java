@@ -7,6 +7,7 @@ import org.apache.struts2.interceptor.SessionAware;
 
 import com.opensymphony.xwork2.ActionSupport;
 
+import lessonjava.ludus.dao.LoginOutDAO;
 import lessonjava.ludus.dao.SelectUsersDAO;
 import lessonjava.ludus.dto.UsersDTO;
 
@@ -19,16 +20,19 @@ public class LoginAction extends ActionSupport implements SessionAware {
 	public String execute() {
 		String result = ERROR;
 		SelectUsersDAO dao = new SelectUsersDAO(email,password);
+		LoginOutDAO lDao= new LoginOutDAO();
 		userList = dao.select();
 
 		if (userList.size() != 0) {
 			if (userList.get(0).getUserFlg() == 1) {
 				session.put("userList", userList.get(0));
 				session.put("userId", userList.get(0).getUserID());
+				lDao.update(email,password);
 				result = SUCCESS;
 			} else {
 				session.put("userList", userList.get(0));
 				session.put("userId", userList.get(0).getUserID());
+				lDao.update(email,password);
 				result = LOGIN;
 			}
 		}

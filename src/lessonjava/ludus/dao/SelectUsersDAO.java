@@ -23,6 +23,7 @@ public class SelectUsersDAO {
 		this.phoneEmail = phoneEmail;
 		this.password = password;
 	}
+
 	public SelectUsersDAO(int userId){
 		this.userId = userId;
 	}
