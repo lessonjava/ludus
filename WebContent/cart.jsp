@@ -65,34 +65,36 @@
 										src="./img/Product/<s:property value="itemImg01"/>"
 										class="img-responsive" alt=""
 										style="height: 113px; width: 150px; min-height: 113px; min-width: 150px;"></td>
-									<td><s:property value="itemName" /><br> <br> <br>
-										<br> <s:form action="CartDeleteAction">
+									<td style="width: 365px;"><s:property value="itemName" /><br>
+										<br> <br> <br> <s:form
+											action="CartDeleteAction">
 											<s:hidden name="userId" value="%{userId}" />
 											<s:hidden name="itemId" value="%{itemId}" />
 											<button type="submit" class="btn btn-default">削除</button>
 										</s:form>
-									<td style="height: 100px; width: 120px;"><fmt:formatNumber
+									<td style="height: 100px; width: 135px;"><fmt:formatNumber
 											value="${subtotal}" />円</td>
-									<td style="height: 100px; width: 120px;">
-
-										<div class="form-inline form-group center-block">
-											<s:form action="CartInsertAction">
-												<s:hidden name="itemId" value="%{itemId}" />
-												<input type="button" class="btn btn-default" value="-"
-													onclick="minus('${itemId}')" />
-												<div class="form-group">
-													<input name="orderNumber"
-														style="height: 30px; width: 30px; padding: 5px;"
-														id="${itemId}" type="text" class="form-control"
-														value="${orderCount}" maxlength="2" pattern="[0-9]*" />
+									<td style="height: 100px; width: 131px;"><s:form
+											action="CartInsertAction">
+											<s:hidden name="itemId" value="%{itemId}" />
+											<div class="row" style="width: 150px;">
+												<div class="col-xs-4" style="padding: -5px;">
+													<button type="button" class="btn btn-default"
+														onclick="minus('${itemId}'),this.form.submit()">-</button>
 												</div>
-												<input type="button" class="btn btn-default " value="+"
-													onclick="plus('${itemId}')" />
-												<button type="submit" class="btn btn-primary center-block">更新する</button>
-											</s:form>
-										</div>
-
-									</td>
+												<div class="col-xs-4" style="padding: 0px;">
+													<div class="form-group">
+														<input type="text" class="form-control" id="${itemId}"
+															name="orderString" value="${orderCount}" maxlength="2"
+															pattern="[0-9]*" onchange="this.form.submit()">
+													</div>
+												</div>
+												<div class="col-xs-4" style="padding: 0px 5px;">
+													<button type="button" class="btn btn-default"
+														onclick="plus('${itemId}'),this.form.submit()">+</button>
+												</div>
+											</div>
+										</s:form></td>
 								</tr>
 							</tbody>
 						</table>

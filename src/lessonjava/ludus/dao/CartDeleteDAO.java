@@ -8,72 +8,77 @@ import java.util.List;
 import com.internousdev.util.DBConnector;
 
 import lessonjava.ludus.dto.CartDTO;
+import lessonjava.ludus.util.ConnectionSupport;
 
 /**
  * cartテーブルにある商品情報を削除するクラス
  *
  * @author KEIGO NISHIMORI
- * @ver 1.0
+ *  @since 2017/04/07
+ * @version 1.0
  */
-public class CartDeleteDAO {
+public class CartDeleteDAO extends ConnectionSupport {
 
+	/**
+	 * mysqlのcetusに接続
+	 */
+	Connection con = new DBConnector("ludus").getConnection();
+
+	/**
+	 * SQL文を表すオブジェクト
+	 */
+	PreparedStatement ps = null;
 	/**
 	 * cartテーブルにある商品情報を削除するメソッド
 	 *
-	 * @param userId
-	 * @param itemId
+	 * @param userId 顧客情報
+	 * @param itemId 商品番号
+	 * @throws SQLException ＳＱＬ
 	 */
-	public void delete(int userId, int itemId) {
-		DBConnector dbCon = new DBConnector("ludus");
-		Connection con = dbCon.getConnection();
+	public void delete(int userId, int itemId) throws SQLException {
+		con.setAutoCommit(false);
 		String sql = "delete from cart where user_id = ?";
 		if (itemId != 0) {
 			sql += " " + "&& item_id= ?";
 		}
-		try {
-			PreparedStatement ps = con.prepareStatement(sql);
+			ps=con.prepareStatement(sql);
 			ps.setInt(1, userId);
 			if (itemId != 0) {
-				ps.setInt(2, itemId);
+			ps.setInt(2, itemId);
 			}
 			ps.executeUpdate();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} finally {
-			if (con != null) {
-				try {
-					con.close();
-
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
-			}
-		}
 	}
 
-	public int itemUpdate(List<CartDTO> cartList) {
-		int processing = 0;
-		DBConnector db = new DBConnector("ludus");
-		Connection con = db.getConnection();
+	/**決済が完了した注文数分 在庫を減らす処理をするメソッド
+	 * @param cartList カート内リスト
+	 * @throws SQLException ＳＱＬ
+	 */
+	public void itemUpdate(List<CartDTO> cartList) throws SQLException {
+		con.setAutoCommit(false);
 		String sql = "update item set stock = stock - ? where item_id=?";
-		try {
 			for (CartDTO cart : cartList) {
-				PreparedStatement ps = con.prepareStatement(sql);
+				ps = con.prepareStatement(sql);
 				ps.setInt(1, cart.getOrderCount());
 				ps.setInt(2, cart.getItemId());
-				processing += ps.executeUpdate();
+				ps.executeUpdate();
 			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} finally {
-			if (con != null) {
-				try {
-					con.close();
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-		return processing;
+	}
+
+	/**
+	 * commitとcloseを実行するメソッド
+	 */
+	public void itemComit(){
+		commit(con);
+		closePs(ps);
+		closeCon(con);
+	}
+
+	/**
+	 * rollbackとcloseを実行するメソッド
+	 */
+	public void itemRollBack(){
+		rollback(con);
+		closePs(ps);
+		closeCon(con);
 	}
 }
