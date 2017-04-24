@@ -35,24 +35,24 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="./img/m01.jpg" alt="hogehoge">
+							<img src="./img/m02.jpg" alt="hogehoge">
 							<div class="carousel-caption">
-								<h3>亀有</h3>
-								<p>コメント</p>
+								<h3><!-- マカロン --></h3>
+								<p><!-- コメント入れられるよ --></p>
 							</div>
 						</div>
 						<div class="item">
-							<img src="./img/m02.jpg" alt="hogehoge">
+							<img src="./img/m01.jpg" alt="hogehoge">
 							<div class="carousel-caption">
-								<h3>西新井</h3>
-								<p>いいいいい</p>
+								<h3><!-- ドーナツ --></h3>
+								<p><!-- コメント入れられるよ --></p>
 							</div>
 						</div>
 						<div class="item">
 							<img src="./img/m03.jpg" alt="hugahuga">
 							<div class="carousel-caption">
-								<h3>北千住</h3>
-								<p>あああああ</p>
+								<h3><!--チョコ --></h3>
+								<p><!-- コメント入れられるよ --></p>
 							</div>
 						</div>
 					</div>
@@ -75,7 +75,7 @@
 
 		<div class="text-center">
 			<h3>
-				<span class="label label-danger">新着情報</span>
+				<span class="label label-danger">MENU</span>
 			</h3>
 			<br>
 			<div class="row">
@@ -91,6 +91,27 @@
 				</div>
 
 				<div class="col-xs-12 col-sm-4">
+		<div class="box1"><!--box1開始タグ -->
+			<div class="twitter"><!-- ツイッタータグ -->
+				<a class="twitter-timeline"	href="https://twitter.com/internousdev" data-widget-id="671917266686971905">@internousdevさんのツイート</a>
+					<script>
+						!function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/
+									.test(d.location) ? 'http' : 'https';
+							if (!d.getElementById(id)) {
+								js = d.createElement(s);
+								js.id = id;
+								js.src = p
+										+ "://platform.twitter.com/widgets.js";
+								fjs.parentNode.insertBefore(js, fjs);
+							}
+						}(document, "script", "twitter-wjs");
+					</script>
+			</div><!-- ツイッター終了タグ -->
+				</div><!--box1の終了タグ -->
+				</div>
+
+<%-- 				<div class="col-xs-12 col-sm-4">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h4 class="panel-title text-left">
@@ -99,7 +120,7 @@
 						</div>
 						<div class="panel-body">逆巻く風邪 波動拳 昇竜拳 竜巻旋風脚 真空波動拳</div>
 					</div>
-				</div>
+				</div> --%>
 
 			</div>
 		</div>

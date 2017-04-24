@@ -41,10 +41,10 @@
 
 						<div id="featured_img">
 							<img id="img"
-								style="height: 250px; width: 400px; min-height: 100px; min-width: 150px;"
+								style="height: 350px; width: 400px; min-height: 100px; min-width: 150px;"
 								src="./img/Product/<s:property value="itemImg01"/>">
 						</div>
-						<div id="thumb_img" class="cf">
+<%-- 						<div id="thumb_img" class="cf">
 							<img class="active"
 								src="./img/Product/<s:property value="itemImg01"/>" width="142"
 								onclick="changeimg('./img/Product/<s:property value="itemImg01"/>',this);">
@@ -54,7 +54,7 @@
 							<img src="./img/Product/<s:property value="itemImg03"/>"
 								width="142"
 								onclick="changeimg('./img/Product/<s:property value="itemImg03"/>',this);">
-						</div>
+						</div> --%>
 					</div>
 				</div>
 

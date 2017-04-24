@@ -30,7 +30,7 @@
 
 
 		<div class="row">
-			<div class="col-sm-2" style="background: #ddd; height: 750px;">
+			<div class="col-sm-2" style="background: #ff9;">
 			<h4>商品カデゴリー</h4>
 			<p><b>・おすすめ</b></p>
 			<p><b>・新商品</b></p>
@@ -41,7 +41,7 @@
 			</p></s:iterator>
 
 			</div>
-			<div class="col-sm-10" style="background: #ccc; height: 750px;">
+			<div class="col-sm-10" style="background: #ffc; ">
 
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
@@ -53,16 +53,15 @@
 
 						<s:iterator value="displayList">
 							<div class="col-xs-12 col-sm-4">
-								<a
-									href="<s:url action="GoItemDetailAction"><s:param name="id" value="%{itemId}"/></s:url>">
+								<a href="<s:url action="GoItemDetailAction"><s:param name="id" value="%{itemId}"/></s:url>">
 									<img src="img/Product/<s:property value="itemImg01"/>" class="img-responsive"
-									style="height:230px; width:280px; min-height:150px; " />
+									style=" width:250px;  height:200px;min-height:150px;" />
 								</a>
 								<p>
 									<s:property value="itemName" />
 								</p>
 								<p>
-									<fmt:formatNumber value="${price}" />
+									<fmt:formatNumber value="${price}" />円
 								</p>
 							</div>
 						</s:iterator>
