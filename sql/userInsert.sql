@@ -45,3 +45,5 @@ values("1234","我那覇","がなは","1234567","東京都","　　","0801111222
 insert into users(password,name_kanji,name_hira,postal,address1,address2,phone_number,phone_email,user_flg)
 values("1234","四条","しじょう","1234567","東京都","　　","08011112222","takane@gmail.com",1);
 
+
+
