@@ -44,7 +44,7 @@
 								style="height: 350px; width: 400px; min-height: 100px; min-width: 150px;"
 								src="./img/Product/<s:property value="itemImg01"/>">
 						</div>
-<%-- 						<div id="thumb_img" class="cf">
+<%--画像3つもないよ！	<div id="thumb_img" class="cf">
 							<img class="active"
 								src="./img/Product/<s:property value="itemImg01"/>" width="142"
 								onclick="changeimg('./img/Product/<s:property value="itemImg01"/>',this);">
