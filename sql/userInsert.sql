@@ -13,7 +13,7 @@ insert into users(password,name_kanji,name_hira,postal,address1,address2,phone_n
 values("1234","天海","あまみ","1234567","神奈川県","二宮町","08011112222","haruka@gmail.com",1);
 
 insert into users(password,name_kanji,name_hira,postal,address1,address2,phone_number,phone_email,user_flg)
-values("1234","如月","きさら","1234567","東京都","渋谷区","08011112222","chihaya@gmail.com",1);
+values("1234","如月","きさらぎ","1234567","東京都","渋谷区","08011112222","chihaya@gmail.com",1);
 
 insert into users(password,name_kanji,name_hira,postal,address1,address2,phone_number,phone_email,user_flg)
 values("1234","星井","ほしい","1234567","東京都","港区","08011112222","miki@gmail.com",1);
