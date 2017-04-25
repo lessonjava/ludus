@@ -12,6 +12,7 @@
 <%--jQueryの読み込み--%>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <%--共通cssの読み込み --%>
+<link rel="stylesheet" href="./css/settlement.css">
 <link rel="stylesheet" href="./css/main.css">
 <%--共通jsの読み込み --%>
 <script src="./js/main.js"></script>
@@ -25,6 +26,7 @@
 				<jsp:include page="header.jsp" /></div>
 		</div>
 		<%--ヘッダー --%>
+<div id="settlement">
 
 <h1>決済情報入力画面</h1>
 
@@ -109,6 +111,7 @@
 				<hr class="style-one">
 				<h1 style="margin: 3rem auto;">会社概要 利用規約</h1>
 			</div>
+		</div>
 		</div>
 		<%--フッター --%>
 	</div>

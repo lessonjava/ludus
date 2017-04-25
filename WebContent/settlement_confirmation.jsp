@@ -12,6 +12,7 @@
 <%--jQueryの読み込み--%>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <%--共通cssの読み込み --%>
+<link rel="stylesheet" href="./css/settlement.css">
 <link rel="stylesheet" href="./css/main.css">
 <%--共通jsの読み込み --%>
 <script src="./js/main.js"></script>
@@ -25,6 +26,7 @@
 				<jsp:include page="header.jsp" /></div>
 		</div>
 		<%--ヘッダー --%>
+<div id="settlement">
 
 <h1>入力情報の確認</h1>
 
@@ -49,7 +51,7 @@
 <a href=main_top.jsp>TOPへ戻る</a>
 
 <hr>
-
+</div>
 		<%--フッター(ただの文字　未完成) --%>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 text-center"
