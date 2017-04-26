@@ -114,7 +114,7 @@
 					<div class="panel-body">
 						<s:form action="GoSettlementAction">
 							<button type="submit" class="btn btn-primary center-block">購入する</button>
-						</s:form>
+		</s:form>
 
 					</div>
 				</div>

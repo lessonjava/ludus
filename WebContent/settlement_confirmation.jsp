@@ -30,17 +30,16 @@
 
 <h1>入力情報の確認</h1>
 
-<h3>クレジットカード情報</h3>
 
 <h3>商品お届け先</h3>
-
+<s:property value="%{shippingAddress}" />
 <h3>購入予定の商品</h3>
-
+<s:property value="%{itemName}" />
 <h3>商品の合計個数</h3>
-
+<s:property value="%{totalOrder}" />点
 <h3>合計支払金額</h3>
+<fmt:formatNumber value="${payment}" pattern="###,###,###"/>円(税込)
 
-<p>円</p>
 <br>
 <br>
 <br>

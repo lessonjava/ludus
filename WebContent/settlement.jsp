@@ -30,7 +30,7 @@
 
 <h1>決済情報入力画面</h1>
 
-  <form>
+  <s:form action="SettlementConfirmationAction">
     <table>
       <tr>
         <th>クレジットカード選択</th>
@@ -91,7 +91,7 @@
         </tr>
    </table>
         <input type="submit" value="入力を確定する" />
-  </form>
+  </s:form>
 <h2><a href=settlement_confirmation.jsp>入力確定</a></h2>
 <br>
 <br>
