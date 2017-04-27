@@ -20,9 +20,6 @@ import lessonjava.ludus.util.CartAssist;
 /**
  * 決済完了するためのクラス
  *
- * @author KEIGO NISHIMORI
- * @since 2017/04/10
- * @version 1.00
  */
 public class SettlementAction extends CartAssist implements SessionAware {
 

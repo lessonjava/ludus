@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="./css/main.css">
 <%--共通jsの読み込み --%>
 <script src="./js/main.js"></script>
-<title>Template</title>
+<title>注文情報確認画面</title>
 </head>
 <body>
 	<div class="container">
@@ -36,16 +36,24 @@
 <h3>購入予定の商品</h3>
 <s:property value="%{itemName}" />
 <h3>商品の合計個数</h3>
-<s:property value="%{totalOrder}" />点
+ <h3 style="white-space: normal;"><s:property value="itemName"/></h3>
 <h3>合計支払金額</h3>
 <fmt:formatNumber value="${payment}" pattern="###,###,###"/>円(税込)
 
 <br>
 <br>
 <br>
-<h2><a href=cart.jsp>カートに戻る</a>&emsp;<a href=settlement_complete.jsp>購入確定</a></h2>
+	<s:form action="CartInsertAction">
+		<button type="submit" class="btn btn-primary center-block">カートに戻る</button>
+	</s:form>
 <br>
-
+                <s:form action="SettlementAction">
+                    <s:hidden name="creditNumber" value="%{creditNumber}" />
+                    <s:hidden name="creditBrand" value="%{creditBrand}" />
+                    <s:hidden name="securityCode" value="%{securityCode}" />
+                    <s:hidden name="shippingAddress" value="%{shippingAddress}" />
+                    <button type="submit" class="btn btn-primary center-block">購入確定</button>
+                </s:form>
 <br>
 <a href=main_top.jsp>TOPへ戻る</a>
 
