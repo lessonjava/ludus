@@ -1,5 +1,4 @@
 drop database if exists ludus;
-
 create database ludus;
 use ludus;
 
@@ -27,7 +26,7 @@ create table item(
 	registration_date datetime not null default current_timestamp,
 	updated_date datetime not null default current_timestamp on update current_timestamp,
 	primary key(item_id),
-	foreign key(item_genre) references genre(item_genre)
+	foreign key(item_genre) references genre(item_genre) on update cascade on delete cascade
 );
 
 create table users (
@@ -46,6 +45,8 @@ create table users (
 	modification_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP comment '更新日'
 );
 
+
+
 create table cart(
 	user_id int not null,
 	item_id int not null,
@@ -56,9 +57,11 @@ create table cart(
 	delete_flg boolean default FALSE,
 	registration_date datetime not null default current_timestamp,
 	updated_date datetime not null default current_timestamp,
-	foreign key(item_id) references item(item_id),
+	foreign key(item_id) references item(item_id) on update cascade on delete cascade,
 	primary key(user_id,item_id)
 );
+
+
 
 create table purchase(
 	purchase_id int not null auto_increment,
@@ -71,8 +74,7 @@ create table purchase(
 	shipping_address varchar(255) not null,
 	purchase_date datetime not null default current_timestamp,
 	updated_date datetime not null default current_timestamp,
-	primary key(purchase_id),
-	foreign key(item_id)references item(item_id)
+	primary key(purchase_id,item_id)
 	);
 
 create table brand(

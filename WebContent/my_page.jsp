@@ -47,9 +47,9 @@
 
 
 
-								<li <s:if test="type==3">class="active"</s:if>><a href="#sampleContentC"
-									data-toggle="tab"><span class="glyphicon glyphicon-star"
-										aria-hidden="true"></span> お気に入り</a></li>
+<!-- 								<li <s:if test="type==3">class="active"</s:if>><a href="#sampleContentC" -->
+<%-- 									data-toggle="tab"><span class="glyphicon glyphicon-star" --%>
+<%-- 										aria-hidden="true"></span> お気に入り</a></li> --%>
 
 
 						</ul>
@@ -110,21 +110,22 @@
 											</tr>
 										</thead>
 										<tbody>
+										  <s:iterator value="purchaseList">
 											<tr>
-												<td>2017/4/5</td>
-												<td>カバオくん</td>
-												<td>68</td>
-												<td>67000円</td>
+												<td><s:property value="purchaseDate"/></td>
+												<td><s:property value="itemName"/></td>
+												<td><s:property value="orderCount"/></td>
+												<td><fmt:formatNumber value="${subtotal}" /></td>
 											</tr>
-
+											</s:iterator>
 										</tbody>
 									</table>
 								</div>
 							</div>
 
-							<div class="tab-pane <s:if test="type==3">active</s:if>" id="sampleContentC">
-								<p>お気に入り商品</p>
-							</div>
+<%-- 							<div class="tab-pane <s:if test="type==3">active</s:if>" id="sampleContentC"> --%>
+<!-- 								<p>お気に入り商品</p> -->
+<!-- 							</div> -->
 						</div>
 					</div>
 				</div>

@@ -5,9 +5,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 import com.internousdev.util.DBConnector;
 
+import lessonjava.ludus.dto.PurchaseDTO;
 import lessonjava.ludus.dto.UsersDTO;
 
 
@@ -70,6 +72,37 @@ public class SelectUsersDAO {
 			e.printStackTrace();
 		}
 		return usersList;
+	}
+
+	public List<PurchaseDTO> select1(int userId) {
+		DBConnector db = new DBConnector("ludus");
+		Connection con = db.getConnection();
+		PurchaseDTO purchase_dto = new PurchaseDTO();
+		List<PurchaseDTO> purchaseDtoList = new ArrayList<PurchaseDTO>();
+		PreparedStatement ps = null;
+		String sql = "SELECT * FROM purchase WHERE user_id = ?";
+		try {
+			ps = con.prepareStatement(sql);
+			ps.setInt(1, userId);
+			ResultSet rs = ps.executeQuery();
+			while (rs.next()) {
+				purchase_dto = new PurchaseDTO();
+				purchase_dto.setPurchaseDate(rs.getString("purchase_date"));
+				purchase_dto.setItemName(rs.getString("item_name"));
+				purchase_dto.setOrderCount(rs.getInt("order_count"));
+				purchase_dto.setSubtotal(rs.getFloat("subtotal"));
+				purchaseDtoList.add(purchase_dto);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return purchaseDtoList;
 	}
 
 }
