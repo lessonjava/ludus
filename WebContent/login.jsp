@@ -52,6 +52,7 @@
 			</div>
 		</div>
 
+
 		<%--フッター(ただの文字　未完成) --%>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 text-center"
