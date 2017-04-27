@@ -73,7 +73,7 @@ public class CreditPurchaseDAO extends ConnectionSupport {
 		ps1.setInt(3, payment);
 		ps1.setString(4, dto.getNameKanji());
 		if (creditBrand == 1) {
-			ps1.setString(5, dto.getNameKanji());
+			ps1.setString(5, dto.getNameHira());
 		}
 		ps1.executeUpdate();
 	}
@@ -87,7 +87,7 @@ public class CreditPurchaseDAO extends ConnectionSupport {
 	 * @param cartList カートリスト
 	 * @throws SQLException ＳＱＬ
 	 */
-	public void ludusPurchaseHistory(int userId, int creditBrand, String shippingAddress, List<CartDTO> cartList)
+	public void LudusPurchaseHistory(int userId, int creditBrand, String shippingAddress, List<CartDTO> cartList)
 			throws SQLException {
 		String sql = "INSERT INTO purchase(user_id, item_id, item_name, order_count, subtotal, payment_method, shipping_address) VALUES(?, ?, ?, ?, ?, ?, ?)";
 		ludusCon.setAutoCommit(false);

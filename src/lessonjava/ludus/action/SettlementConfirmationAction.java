@@ -18,8 +18,6 @@ import lessonjava.ludus.util.CartAssist;
 
 
 /**決済確認画面に遷移するためのクラス
- * @author KEIGO NISHIMORI
- * @since 2017/04/10
  * @version 1.00
  */
 public class SettlementConfirmationAction extends CartAssist implements SessionAware {

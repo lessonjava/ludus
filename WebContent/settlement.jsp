@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="./css/main.css">
 <%--共通jsの読み込み --%>
 <script src="./js/main.js"></script>
-<title>Template</title>
+<title>決済情報入力画面</title>
 </head>
 <body>
 	<div class="container">
@@ -92,7 +92,7 @@
    </table>
         <input type="submit" value="入力を確定する" />
   </s:form>
-<h2><a href=settlement_confirmation.jsp>入力確定</a></h2>
+
 <br>
 <br>
 <br>

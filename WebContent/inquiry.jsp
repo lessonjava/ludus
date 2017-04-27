@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="./css/main.css">
 <%--共通jsの読み込み --%>
 <script src="./js/main.js"></script>
-<title>Template</title>
+<title>お問い合わせ</title>
 </head>
 <body>
 	<div class="container">

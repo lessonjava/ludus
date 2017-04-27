@@ -76,7 +76,8 @@ public class CreditBrandDAO {
 				if(brandName == "visa"){
 					dto.setUserID(rs.getInt("security_code"));
 					dto.setPassword(rs.getString("login_id"));
-					dto.setNameKanji(rs.getString("lname_kanji"));
+					dto.setNameKanji(rs.getString("last_name"));
+					dto.setNameHira(rs.getString("first_name"));
 				}else{
 					dto.setPassword(rs.getString("login_id"));
 					dto.setNameKanji(rs.getString("name_e"));

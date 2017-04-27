@@ -15,11 +15,9 @@ import lessonjava.ludus.dto.CartDTO;
 import lessonjava.ludus.dto.UsersDTO;
 import lessonjava.ludus.util.CartAssist;
 
-
-
 /**
  * 決済完了するためのクラス
- *
+
  */
 public class SettlementAction extends CartAssist implements SessionAware {
 
@@ -104,9 +102,10 @@ public class SettlementAction extends CartAssist implements SessionAware {
 		cartList = cartDao.selectCart(userId, 0, true);
 		this.msg = StockCheck(cartList, userId, 0);
 		cartList = cartDao.selectCart(userId, 0, true);
+		this.order=totalOrder(cartList);
+		this.payment=payment(cartList);
 		if (msg.size() != 0) {
-			this.order=totalOrder(cartList);
-			this.payment=payment(cartList);
+
 			return INPUT;
 		}
 		if (cartList.size() != 0) {
@@ -114,7 +113,7 @@ public class SettlementAction extends CartAssist implements SessionAware {
 			CartDeleteDAO cda = new CartDeleteDAO();
 			try {
 				purchaseDao.CreditPurchaseHistory(userDto, creditBrand, cartList);
-				purchaseDao.ludusPurchaseHistory(userId, creditBrand, shippingAddress, cartList);
+				purchaseDao.LudusPurchaseHistory(userId, creditBrand, shippingAddress, cartList);
 				cda.delete(userId, 0);
 				cda.itemUpdate(cartList);
 				purchaseDao.commit();
@@ -123,12 +122,12 @@ public class SettlementAction extends CartAssist implements SessionAware {
 			} catch (SQLException e) {
 				purchaseDao.rollback();
 				cda.itemRollBack();
-				errorMessage= getText("lang.settlement.error05");
+				errorMessage= "エラーが起きたため決済の処理ができませんでした。申し訳ございませんが、もう一回やり直してください。";
 				e.printStackTrace();
 				return result;
 			}
 		}
-		errorMessage = getText("lang.cart.no");
+		errorMessage = "カートに商品が入っていません。";
 		return INPUT;
 	}
 

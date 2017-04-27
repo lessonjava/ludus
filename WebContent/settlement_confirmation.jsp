@@ -34,7 +34,25 @@
 <h3>商品お届け先</h3>
 <s:property value="%{shippingAddress}" />
 <h3>購入予定の商品</h3>
-<s:property value="%{itemName}" />
+                <s:iterator value="cartList">
+                <div class="table-responsive" >
+                    <table class="table">
+                        <tr>
+                            <td style="">
+                                <div class="col-xs-12" style="min-width:400px;height:170px;">
+                                    <div class="col-xs-3">
+                                        <img src="./img/Product/<s:property value="itemImg01"/>"class="img-responsive" alt="" style="height: 150px; width: 150px; margin-top:10px;">
+                                    </div>
+                                    <div class="col-xs-9" style="padding:0; margin-top:-20px;">
+                                        <h3 style="white-space: normal;"><s:property value="itemName"/></h3><br>
+                                        <p><b>価格：<fmt:formatNumber value="${subtotal*1.08}" pattern="###,###,###"/>円(税込)</b></p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                </s:iterator>
 <h3>商品の合計個数</h3>
  <h3 style="white-space: normal;"><s:property value="itemName"/></h3>
 <h3>合計支払金額</h3>
@@ -44,9 +62,6 @@
 <br>
 <br>
 <br>
-	<s:form action="CartInsertAction">
-		<button type="submit" class="btn btn-primary center-block">カートに戻る</button>
-	</s:form>
 <br>
                 <s:form action="SettlementAction">
                     <s:hidden name="creditNumber" value="%{creditNumber}" />
