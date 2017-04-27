@@ -36,8 +36,7 @@
 			<p><b>・新商品</b></p>
 			<s:iterator value="genreList">
 			<p>
-			<a
-								href='<s:url action="GoItemListAction"><s:param name="itemGenre" value="%{itemGenre}"></s:param></s:url>'><b>・<s:property value="%{itemGenre}"/></b></a>
+			<a href='<s:url action="GoItemListAction"><s:param name="itemGenre" value="%{itemGenre}"></s:param></s:url>'><b>・<s:property value="%{itemGenre}"/></b></a>
 			</p></s:iterator>
 
 			</div>

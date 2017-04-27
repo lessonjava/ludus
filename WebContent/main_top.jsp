@@ -80,15 +80,16 @@
 			<br>
 			<div class="row">
 				<div class="col-xs-6 col-sm-4">
-					<img src="./img/macaron01.jpg" class="img-responsive"
-						style="width: 100%" alt="Image">
+					<a href='<s:url action="GoItemListAction"><s:param name="itemGenre">マカロン</s:param></s:url>'>
+									<img src="./img/macaron01.jpg" class="img-responsive" style="width: 100%" alt="Image"></a>
 					<p>マカロン</p>
-				</div>
+					</div>
 				<div class="col-xs-6 col-sm-4">
-					<img src="./img/Brownie.jpg" class="img-responsive"
-						style="width: 100%" alt="Image">
+					<a href='<s:url action="GoItemListAction"><s:param name="itemGenre">ブラウニー</s:param></s:url>'>
+									<img src="./img/Brownie.jpg" class="img-responsive" style="width: 100%" alt="Image"></a>
 					<p>ブラウニー</p>
-				</div>
+			</div>
+
 
 				<div class="col-xs-12 col-sm-4">
 		<div class="box1"><!--box1開始タグ -->
