@@ -40,6 +40,7 @@
 <h3>合計支払金額</h3>
 <fmt:formatNumber value="${payment}" pattern="###,###,###"/>円(税込)
 
+
 <br>
 <br>
 <br>
