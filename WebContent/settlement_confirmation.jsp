@@ -53,8 +53,6 @@
                     </table>
                 </div>
                 </s:iterator>
-<h3>商品の合計個数</h3>
- <h3 style="white-space: normal;"><s:property value="itemName"/></h3>
 <h3>合計支払金額</h3>
 <fmt:formatNumber value="${payment}" pattern="###,###,###"/>円(税込)
 
