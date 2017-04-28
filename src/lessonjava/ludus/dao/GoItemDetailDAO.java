@@ -31,10 +31,15 @@ public class GoItemDetailDAO {
 		Connection con = db.getConnection();
 		ItemDTO dto = new ItemDTO();
 		ArrayList<ItemDTO> itemList = new ArrayList<ItemDTO>();
-		String sql = "SELECT * FROM item WHERE item_id=?";
+		String sql = "SELECT * FROM item";
+		if(id!=0){
+			sql+="  WHERE item_id=?";
+		}
 		try{
 			PreparedStatement ps = con.prepareStatement(sql) ;
-			ps.setInt(1, id);
+			if(id!=0){
+				ps.setInt(1, id);
+			}
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()){
 				dto.setItemId(rs.getInt("item_id"));

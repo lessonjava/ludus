@@ -47,10 +47,15 @@ public class GoItemListDAO {
 		DBConnector db  = new  DBConnector("ludus");
 		Connection con = db.getConnection();
 		String sql;
-			sql = "SELECT * FROM item WHERE item_genre = ?";
+			sql = "SELECT * FROM item";
+			if(itemGenre!=null){
+				sql+=" WHERE item_genre = ?";
+			}
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);
-			ps.setString(1, itemGenre);
+			if(itemGenre!=null){
+				ps.setString(1, itemGenre);
+			}
 			ResultSet rs = ps.executeQuery();
 			while(rs.next()){
 				ItemDTO dto = new ItemDTO();

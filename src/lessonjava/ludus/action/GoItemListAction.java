@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 import com.opensymphony.xwork2.ActionSupport;
 
+import lessonjava.ludus.dao.GenreDAO;
 import lessonjava.ludus.dao.GoItemListDAO;
 import lessonjava.ludus.dto.GenreDTO;
 import lessonjava.ludus.dto.ItemDTO;
@@ -60,10 +61,12 @@ public  class GoItemListAction extends ActionSupport {
 	 */
 	public String execute() {
 		String result = ERROR;
+		GenreDAO dao= new GenreDAO();
+		genreList = dao.selectGenre();
 
-		GoItemListDAO dao = new GoItemListDAO();
+		GoItemListDAO dao1 = new GoItemListDAO();
 
-				displayList = dao.select(itemGenre);
+				displayList = dao1.select(itemGenre);
 
 		if(displayList.size() != 0) {
 			result = SUCCESS;

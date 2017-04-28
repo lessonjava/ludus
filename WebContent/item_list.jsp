@@ -32,11 +32,11 @@
 		<div class="row">
 			<div class="col-sm-2" style="background: #ff9;">
 			<h4>商品カデゴリー</h4>
-			<p><b>・おすすめ</b></p>
-			<p><b>・新商品</b></p>
+<!-- 			<p><b>・おすすめ</b></p> -->
+<!-- 			<p><b>・新商品</b></p> -->
 			<s:iterator value="genreList">
 			<p>
-			<a href='<s:url action="GoItemListAction"><s:param name="itemGenre" value="%{itemGenre}"></s:param></s:url>'><b>・<s:property value="%{itemGenre}"/></b></a>
+			<a href='<s:url action="GoItemListAction"><s:param name="itemGenre" value="%{itemGenre}"></s:param><s:param name="id" value="0"/></s:url>'><b>・<s:property value="%{itemGenre}"/></b></a>
 			</p></s:iterator>
 
 			</div>
@@ -52,9 +52,7 @@
 
 						<s:iterator value="displayList">
 							<div class="col-xs-12 col-sm-4">
-								<a href="<s:url action="GoItemDetailAction"><s:param name="id" value="%{itemId}"/></s:url>">
-									<img src="img/Product/<s:property value="itemImg01"/>" class="img-responsive"
-									style=" width:250px;  height:200px;min-height:150px;" />
+								<a href="<s:url action="GoItemDetailAction"><s:param name="id" value="%{itemId}"/></s:url>"><img src="img/Product/<s:property value="itemImg01"/>" class="img-responsive" style=" width:250px;  height:200px;min-height:150px;" />
 								</a>
 								<p>
 									<s:property value="itemName" />
