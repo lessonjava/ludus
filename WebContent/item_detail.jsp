@@ -75,7 +75,9 @@
 								</h4>
 							</div>
 							<div class="col-xs-12 col-sm-12">
-								<p>残り25点</p>
+							<s:if test="stock==0"><p>在庫なし</p></s:if>
+							<s:elseif test="stock<10"><p>残り${stock}個</p></s:elseif>
+							<s:else>在庫あり</s:else>
 							</div>
 
 							<s:form action="CartInsertAction">

@@ -81,7 +81,7 @@
             </td>
       </tr>
       <tr>
-        <th>セキュリティカード</th>
+        <th>セキュリティコード</th>
         <td><input type="text" name="securityCode" maxlength="4" pattern="^([0-9]{3,4})$"required>
         </td>
       </tr>

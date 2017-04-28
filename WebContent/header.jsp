@@ -66,10 +66,10 @@
 									href='<s:url action="MyPageAction"><s:param name="type" value="2"/></s:url>'><span
 										class="glyphicon glyphicon-book" aria-hidden="true"></span>
 										購入履歴</a></li>
-								<li><a
-									href='<s:url action="MyPageAction"><s:param name="type" value="3"/></s:url>'><span
-										class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										お気に入り</a></li>
+<!-- 								<li><a -->
+<%-- 									href='<s:url action="MyPageAction"><s:param name="type" value="3"/></s:url>'><span --%>
+<%-- 										class="glyphicon glyphicon-star" aria-hidden="true"></span> --%>
+<!-- 										お気に入り</a></li> -->
 								<li role="separator" class="divider"></li>
 								<li><a href='<s:url action="LogOutAction"></s:url>'><span
 										class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
@@ -88,14 +88,14 @@
 							class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 							カート</a></li>
 				</ul>
-				<form class="navbar-form navbar-right" style="padding: 15px 0;">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
-					</div>
-					<button type="submit" class="btn btn-default">
-						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>検索
-					</button>
-				</form>
+<!-- 				<form class="navbar-form navbar-right" style="padding: 15px 0;"> -->
+<!-- 					<div class="form-group"> -->
+<!-- 						<input type="text" class="form-control" placeholder="Search"> -->
+<!-- 					</div> -->
+<!-- 					<button type="submit" class="btn btn-default"> -->
+<%-- 						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>検索 --%>
+<!-- 					</button> -->
+<!-- 				</form> -->
 
 			</div>
 		</div>
